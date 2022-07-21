@@ -1,0 +1,112 @@
+.sidebar {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    background: #07060a;
+    font-size: 0.65em;
+    bottom: 0px;
+}
+
+.nav {
+    position: relative;
+    margin: 0 15%;
+    text-align: right;
+    top: 20%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav li {
+    position: relative;
+    margin: 3.2em 0;
+}
+
+.nav a {
+    line-height: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: rgba(#FFF, 0.35);
+    display: block;
+    transition: all ease-out 300ms;
+}
+
+.nav .active a {
+    color: white;
+    text-align: left;
+}
+
+.nav :not(.active)::after {
+    opacity: 0.2;
+}
+
+.nav :not(.active):hover a {
+    color: rgba(#FFF, 0.75);
+    text-decoration: none;
+}
+
+.nav ::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    background: black;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, #2e81ee, #b74e91)
+}
+
+.sidetext {
+    line-height: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: rgba(255, 255, 255, 0.35);
+    display: block;
+    transition: all ease-out 300ms;
+}
+
+.sidetext:hover {
+    color: white;
+}
+
+
+
+
+.titulo {
+    line-height: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: white;
+    display: block;
+    margin-left: 50px;
+    margin-top: 130px;
+    transition: all ease-out 300ms;
+}
+
+.sidebarlogo {
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    margin-left: 50px!important;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+  }
+  .sidebarlog {
+ 
+    margin-left: 10px!important;
+    margin-top: 20px!important;
+  }

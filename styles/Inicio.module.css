@@ -1,0 +1,14 @@
+.inicio {
+    width: 700px;
+    height: 710px;
+    margin: 300px;
+    margin-top: 200px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.inicio span {
+    font-size: 45px;
+    margin: 50px;
+    align-items: center;
+}

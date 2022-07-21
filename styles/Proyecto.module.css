@@ -1,0 +1,94 @@
+.proyectocontenedor {
+    background-color: rgb(236, 243, 244);
+    width: 1263px;
+    margin-top: 250px;
+}
+
+.proyectotitulo {
+    font-weight: 600;
+    width: 50px;
+    padding: 50px;
+    margin-left: 450px;
+    font-size: 50px;
+    color: rgb(22, 22, 22);
+    text-align: center;
+}
+
+.barraseparador {
+    width: 120px;
+    height: 10px;
+    margin-bottom: 30px;
+    margin-top: -80px;
+    margin-left: 600px;
+    justify-content: center;
+    background-color: rgb(222, 111, 26);
+}
+
+.container {
+    justify-content: center;
+}
+
+
+
+
+.card {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 150px;
+    background-color: #f5f5f5;
+}
+
+.cardimagen {
+    float: left;
+    width: 460px;
+    height: 490px;
+    margin: 20px;
+    background: #f5f5f5;
+    padding-bottom: 10px;
+}
+
+
+
+.btnloadmore {
+    padding: 10px 20px;
+    margin: 20px 0 30px 0;
+    cursor: pointer;
+}
+
+.boton {
+    clear: both;
+}
+
+
+
+.imagen:hover {
+    opacity: 0.3;
+}
+
+
+.cardimagen:hover .text {
+    display: block;
+}
+
+.text {
+    display: none;
+    overflow: hidden;
+    text-align: center;
+    margin-top: -279px;
+    outline: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(121, 117, 117) !important;
+    padding: 10px;
+}
+
+.separador {
+    width: 120px;
+    height: 10px;
+    margin-bottom: 30px;
+    margin-top: 150px;
+    margin-left: 600px;
+    justify-content: center;
+    background-color: rgb(222, 111, 26);
+}
