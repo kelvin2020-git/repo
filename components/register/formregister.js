@@ -8,7 +8,7 @@ import styles from '../../styles/Register.module.css'
 import {
   updateProfile,
   createUserWithEmailAndPassword,
-} from "firebase/compat/auth";
+} from "firebase/auth";
 import { useForm } from "react-hook-form";
 import { getFirestore, doc, setDoc, } from "firebase/firestore";
 export default function Formregister() {
