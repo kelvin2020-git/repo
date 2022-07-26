@@ -3,21 +3,21 @@ import Image from 'next/image';
 import logo from '../../public/logo.webp'
 import Swal from "sweetalert2";
 import { useRouter } from "next/router";
-import { auth, app } from "../../components/firebase/firebase-config";
+import { authh, firebaseApp} from "../../components/firebase/firebase-config";
 import styles from '../../styles/Register.module.css'
 import {
   updateProfile,
   createUserWithEmailAndPassword,
-} from "firebase/auth";
+} from "firebase/compat/auth";
 import { useForm } from "react-hook-form";
 import { getFirestore, doc, setDoc, } from "firebase/firestore";
 export default function Formregister() {
-  const firestore = getFirestore(app);
+  const firestore = getFirestore(firebaseApp);
   const { register, handleSubmit, formState: { errors } } = useForm();
   const { push } = useRouter();
   const registerUser = async (email, password, name, rol) => {
     const infoUsuario = await createUserWithEmailAndPassword(
-      auth,
+      authh,
       email,
       password,
       name, rol

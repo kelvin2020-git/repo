@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import Image from 'next/image';
 import logo from '../../public/logo.webp'
-import app from "../firebase/firebase-config";
+import {authh,firebaseApp } from "../firebase/firebase-config";
 import styles from '../../styles/Navbar.module.css'
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import { useRouter } from "next/router";
 
-const auth = getAuth(app);
-const firestore = getFirestore(app);
-
+const auth = getAuth(firebaseApp);
+const firestore = getFirestore(firebaseApp);
 export default function Navbar() {
   const { push } = useRouter();
   const [user, setUser] = useState(null);

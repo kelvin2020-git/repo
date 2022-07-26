@@ -1,19 +1,30 @@
+import { initializeApp,getApps, } from "firebase/app";
+
+
+import {
+  getAuth,
+ 
+  GoogleAuthProvider
+} from "firebase/auth";
+
+
+
 
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import 'firebase/analytics';
+
 import { getAnalytics, logEvent } from "firebase/analytics";
 import {
   getFirestore,
   doc,
   setDoc,
+  Firestore,
   collection,
   addDoc,
   getDocs,
 } from "firebase/firestore";
-import { getAuth } from "firebase/auth";
+
 // Your web app's Firebase configuration
-import { GoogleAuthProvider } from "firebase/auth";
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyBW4BkytN0_cFYzAk9a0ufSFMoAy4QiJpU",
@@ -25,27 +36,51 @@ const firebaseConfig = {
   measurementId: "G-VYBXPQJ48J"
 };
 
-let analytics; let db; let googleAuthProvider;let auth;let app;
-if (firebaseConfig?.projectId) {
+
+
+
+
+let analytics; let googleAuthProvider; let authh; let firebaseApp;let db;let firestore
+if (typeof window !== "undefined" && !getApps().length) {
+  firebaseApp = initializeApp(firebaseConfig);
+  authh = getAuth(firebaseApp);
+firestore = getFirestore( firebaseApp);
+
+  if (firebaseApp.name && typeof window !== 'undefined') {
+    analytics = getAnalytics(firebaseApp);
+    logEvent(analytics, 'notification_received');
+  }
+  
+  // Access Firebase services using shorthand notation
+  db = getFirestore();
+  googleAuthProvider = new GoogleAuthProvider();
+
+
+
+}
+
+
+
+
+
+
+
+
 // Initialize Firebase
- app = initializeApp(firebaseConfig);
 
-auth = getAuth(app);
 
-if (app.name && typeof window !== 'undefined') {
-  analytics = getAnalytics(app);
-  logEvent(analytics, 'notification_received');
-}
 
-// Access Firebase services using shorthand notation
-db = getFirestore();
-googleAuthProvider = new GoogleAuthProvider();
-}
+
+
+
+
+
 
 export {
-auth,
-  db,
-  app,
+   authh, 
+   firebaseApp,
+   firestore,
+ db,
   doc, //Referencia a documento en Firestore
   setDoc, // Setea Datos en la base de Firestore,
   collection,

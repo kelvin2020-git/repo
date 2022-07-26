@@ -1,9 +1,9 @@
 import React from 'react';
-
-import {auth} from "../../firebase/firebase-config";
+import { getAuth } from "firebase/auth";
+import firebaseApp from "../../firebase/firebase-config";
 import styles from '../../../styles/Headerdasboard.module.css'
 import { useRouter } from "next/router";
-
+const auth = getAuth(firebaseApp);
 const Header = ({ user }) => {
   const { push } = useRouter();
   const logout = () => {
