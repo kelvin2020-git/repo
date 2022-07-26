@@ -1,11 +1,11 @@
 
 import React, { useState } from "react";
-import {auth} from "../firebase/firebase-config";
+import app from "../firebase/firebase-config";
 import { onAuthStateChanged, getAuth, signOut } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import Admin from "./admin";
 const firestore = getFirestore(app);
-
+const auth = getAuth(app);
 const Dasboard = () => {
   const [user, setUser] = useState(null);
   async function getRol(uid) {
