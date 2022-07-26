@@ -3,7 +3,8 @@ import Image from 'next/image';
 import logo from '../../public/logo.webp'
 import Swal from "sweetalert2";
 import { useRouter } from "next/router";
-import { authh, firebaseApp} from "../../components/firebase/firebase-config";
+import { authh} from "../../components/firebase/firebase-config";
+import  firebaseApp from "../../components/firebase/firebase-config";
 import styles from '../../styles/Register.module.css'
 import {
   updateProfile,
