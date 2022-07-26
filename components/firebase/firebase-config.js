@@ -1,7 +1,4 @@
-import "firebase/compat/firestore";
-import "firebase/compat/auth";
-import "firebase/compat/app";
-import "firebase/compat/analytics";
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 
@@ -39,29 +36,34 @@ const firebaseConfig = {
 
 
 
+function firebaseApp() {
+  if (typeof window !== undefined) {
+      initializeApp(firebaseConfig);
+      console.log("Firebase has been init successfully");
+  }
+}
+
+const app = initializeApp(firebaseConfig);
 
 
-let analytics; let db; let googleAuthProvider;let authh;let firebaseApp;
-if (firebaseConfig?.projectId) {
-  // Initialize Firebase
-  firebaseApp = initializeApp(firebaseConfig);
+
+
   
-  authh = getAuth(firebaseApp);
+ const authh = getAuth(app);
   
-  if (firebaseApp.name && typeof window !== 'undefined') {
-    analytics = getAnalytics(firebaseApp);
+  if (app.name && typeof window !== 'undefined') {
+   const analytics = getAnalytics(app);
     logEvent(analytics, 'notification_received');
   }
   
   // Access Firebase services using shorthand notation
-  db = getFirestore();
-  googleAuthProvider = new GoogleAuthProvider();
-  }
+ const db = getFirestore();
+ const googleAuthProvider = new GoogleAuthProvider();
+ 
 
 
 
 // Initialize Firebase
-
 
 
 
@@ -81,7 +83,7 @@ export {
   getDocs,
   addDoc,
   googleAuthProvider,
-  analytics
+
 }; 
 
 

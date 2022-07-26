@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from 'next/image';
 import logo from '../../public/logo.webp'
-import {authh,firebaseApp } from "../firebase/firebase-config";
+import firebaseApp from "../firebase/firebase-config";
 import styles from '../../styles/Navbar.module.css'
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";

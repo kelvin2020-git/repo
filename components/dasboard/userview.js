@@ -1,6 +1,6 @@
 
 import React from "react";
-import  {firebaseApp} from "../firebase/firebase-config";
+import  firebaseApp from "../firebase/firebase-config";
 import { useRouter } from "next/router";
 import Vistausuario from "./userview/vistausuario";
 import { getAuth } from "firebase/auth";

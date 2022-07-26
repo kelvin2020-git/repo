@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import {firebaseApp} from "../firebase/firebase-config";
+import firebaseApp from "../firebase/firebase-config";
 import { onAuthStateChanged, getAuth, signOut } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import Admin from "./admin";

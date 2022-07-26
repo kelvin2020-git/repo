@@ -3,7 +3,7 @@ import logo from '../../public/logo.webp'
 import Swal from "sweetalert2";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
-import { firebaseApp } from "../../components/firebase/firebase-config";
+import  firebaseApp  from "../../components/firebase/firebase-config";
 import { authh } from "../../components/firebase/firebase-config";
 import { getFirestore, doc, setDoc, } from "firebase/firestore";
 import styles from '../../styles/Login.module.css'
