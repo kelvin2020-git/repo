@@ -3,7 +3,7 @@ import React from 'react';
 import logo from '../../../public/logo.webp'
 import { useRouter } from "next/router";
 import styles from '../../../styles/Sidebar.module.css'
-const Sidebar = () => {
+const Sidebar = ({user}) => {
   const { push } = useRouter();
   const categoria = () => {
     push("/dashboard/categoria");
@@ -34,7 +34,8 @@ const Sidebar = () => {
           />
 
         </div>
-        <li className={styles.titulo}><a >Strong Concrete</a></li>
+        
+        <li className={styles.titulo}><a > Strong Concrete  </a></li>
         <nav className={styles.nav}>
           <ul>
 

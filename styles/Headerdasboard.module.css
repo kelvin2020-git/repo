@@ -11,6 +11,20 @@
          align-items: center;
          z-index: 900
      }
+/* CLASES PARA LA CABECERA DE PROYECTOS, CATEGORIA Y USUARIO*/
+     .cabecera2 {
+        font-size: 0.65em;
+        left: 256px;
+        height: 70px;
+        width: 80%;
+        overflow: hidden;
+        background-color: rgba(100, 99, 99, 0.802);
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 900
+    }
 
      .btnlogout {
          border-color: #d3181e;
@@ -20,20 +34,37 @@
          margin-bottom: 10px;
          border: 2px solid #7a7e7a;
          background-color: #ee2233;
-         margin-left: 900px;
+         margin-left: -200px;
      }
+
+
+     .btnhome {
+        border-color: #3ba2f1;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #7a7e7a;
+        background-color: #2296ee;
+        margin-left: 10px;
+    }
 
      .btnlogout:hover {
          color: rgb(12, 11, 11);
          background-color: #ee2233;
      }
-
+     .btnhome:hover {
+        color: white;
+        background-color: #b3b3b3bb;
+    }
      .headertext {
-         margin-left: 600px;
+         margin-left: -500px;
          font-size: 14px;
+       
          text-decoration: none;
          letter-spacing: 0.2em;
          color: white;
+      
          margin-top: 1px !important;
          font-family:  Helvetica, sans-serif;
          transition: all ease-out 300ms;

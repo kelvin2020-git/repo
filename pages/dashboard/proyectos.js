@@ -1,60 +1,46 @@
-import React, { useState } from "react";
+import React from "react";
 import App from '../../components/dasboard/adminview/proyecto/App';
 import Sidebar from "../../components/dasboard/adminview/sidebar";
-import Header from "../../components/dasboard/adminview/header";
+import { getAuth } from "firebase/auth";
 import app from "../../components/firebase/firebase-config";
-import { onAuthStateChanged,getAuth} from "firebase/auth";
-import { getFirestore, doc, getDoc } from "firebase/firestore";
-const firestore = getFirestore(app);
+import styles from '../../styles/Headerdasboard.module.css'
+import { useRouter } from "next/router";
+import { withProtectede } from "../../components/scr/AuthStateChanged";
 const auth = getAuth(app);
 function Proyecto() {
-   
-   
-    const [user, setUser] = useState(null);
+  const { push } = useRouter();
+  const logout = () => {
+    auth.signOut();
+    push("/")
 
-    async function getRol(uid) {
-      const docuRef = doc(firestore, `usuarios/${uid}`);
-      const docuCifrada = await getDoc(docuRef);
-      const infoFinal = docuCifrada.data().rol;
-      return infoFinal;
-    }
-  
-    function setUserWithFirebaseAndRol(usuarioFirebase) {
-      getRol(usuarioFirebase.uid).then((rol) => {
-        const userData = {
-          uid: usuarioFirebase.uid,
-          email: usuarioFirebase.email,
-          name: usuarioFirebase.displayName,
-          rol: rol,
-        };
-        setUser(userData);
-       
-      });
-    }
-  
-    onAuthStateChanged(auth, (usuarioFirebase) => {
-      if (usuarioFirebase) {
-        //funcion final
-  
-        if (!user) {
-          setUserWithFirebaseAndRol(usuarioFirebase);
-        }
-      } else {
-        setUser(null);
-      }
-    });
-    return (
-        <>
-    <Sidebar />
-    <section className="app-contenedor">
-  <div className="container">      
-  <App/> 
-  </div>
-</section>
-           
-        </>
+  };
+  const home = () => {
+    push("/")
+  };
 
-    );
-  }
-  
-  export default Proyecto;
+  return (
+    <>
+
+
+      <div className={styles.cabecera2}>
+        <button className={styles.btnhome} onClick={home}> HOME</button>
+        <div>
+          <div className={styles.headertext}>
+
+          </div>
+          <button className={styles.btnlogout} onClick={logout}> Cerrar Sesión</button>
+        </div>
+      </div>
+      <Sidebar />
+      <section className="app-contenedor">
+        <div className="container">
+          <App />
+        </div>
+      </section>
+
+    </>
+
+  );
+}
+
+export default withProtectede(Proyecto);

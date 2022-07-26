@@ -6,12 +6,14 @@ import styles from '../../styles/Navbar.module.css'
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import { useRouter } from "next/router";
+
 const auth = getAuth(app);
 const firestore = getFirestore(app);
 
 export default function Navbar() {
-  const [user, setUser] = useState(null);
   const { push } = useRouter();
+  const [user, setUser] = useState(null);
+  const router = useRouter();
   async function getRol(uid) {
     const docuRef = doc(firestore, `usuarios/${uid}`);
     const docuCifrada = await getDoc(docuRef);
@@ -34,16 +36,20 @@ export default function Navbar() {
       if (!user) {
         setUserWithFirebaseAndRol(usuarioFirebase);
       }
-    } else {
-      setUser(null);
-    }
+    } 
   })
   const logout = () => {
     push("/Login");
 
   };
+  const Dasboard = () => {
+    push("/dashboard");
 
+  };
   return (
+
+    <>
+    
     <div className={styles.navbar}>
       <div >
         <a href="#inicio">
@@ -59,15 +65,23 @@ export default function Navbar() {
           <li className={styles.listaitemouter}>
             <a className={styles.listaenlace} href="#inicio">INICIO</a>
             <ul className={styles.listainner}>
+           
               <li className={styles.listaiteminner}> <a href="#servicios">SERVICIOS</a></li>
             </ul>
           </li>
+          {user ? <li className={styles.navbartext}><a onClick={Dasboard}>DASHBOARD</a></li>:<a /> }
           <li className={styles.navbartext}><a href="#nosotros">NOSOTROS</a></li>
           <li className={styles.navbartext}><a href="#proyecto" >PROYECTOS</a></li>
           <li className={styles.navbartext}><a href="#contacto">CONTACTOS</a></li>
+
           {user ? <a /> : <li className={styles.navbartext}><a onClick={logout}>INICIO SESIÓN</a></li>}
         </nav>
       </div>
     </div>
+
+
+    
+    </>
+
   );
 }

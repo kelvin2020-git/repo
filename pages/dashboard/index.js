@@ -1,5 +1,7 @@
 import React from 'react'
 import Dasboard from '../../components/dasboard/dasboard';
+import { withProtectede } from '../../components/scr/AuthStateChanged';
+
 
 
 

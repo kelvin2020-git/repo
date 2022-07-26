@@ -29,7 +29,7 @@ export default function Formlogin() {
       .catch((e) => {
         console.log(e);
         if (e.code === 'auth/wrong-password') {
-          Swal.fire("Error", "contrase;a es incorrecta", "error");
+          Swal.fire("Error", "El usuario y contraseña es incorrecta", "error");
         }
         if (e.code === 'auth/user-not-found') {
           Swal.fire("Error", "El usuario no existe", "error");

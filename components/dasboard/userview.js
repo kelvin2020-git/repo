@@ -3,6 +3,7 @@ import React from "react";
 import { getAuth } from "firebase/auth";
 import app from "../firebase/firebase-config";
 import { useRouter } from "next/router";
+import Vistausuario from "./userview/Vistausuario";
 const auth = getAuth(app);
 function UserView({user}) {
 
@@ -15,7 +16,9 @@ function UserView({user}) {
     push("/");
     console.log("logout");
   };
-  return <div className="cabecera">
+  return <>
+  
+  <div className="cabecera">
     
   <div>
     <div className="header-text">
@@ -25,7 +28,11 @@ function UserView({user}) {
       
 <button className="btn-logout" onClick={logout}> Cerrar Sesion</button>
   </div>
-</div>;
+</div>
+
+<Vistausuario/>
+  
+  </>
 }
 
 export default UserView;
