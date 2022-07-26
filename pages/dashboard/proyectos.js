@@ -1,12 +1,11 @@
 import React from "react";
 import App from '../../components/dasboard/adminview/proyecto/App';
 import Sidebar from "../../components/dasboard/adminview/sidebar";
-import { getAuth } from "firebase/auth";
-import app from "../../components/firebase/firebase-config";
+import { auth} from "../../components/firebase/firebase-config";
 import styles from '../../styles/Headerdasboard.module.css'
 import { useRouter } from "next/router";
 import { withProtectede } from "../../components/scr/AuthStateChanged";
-const auth = getAuth(app);
+
 function Proyecto() {
   const { push } = useRouter();
   const logout = () => {

@@ -1,11 +1,11 @@
 import React from "react";
 import Sidebar from "../../components/dasboard/adminview/sidebar";
 import Categoriaa from '../../components/dasboard/adminview/categoria/App';
-import { getAuth } from "firebase/auth";
-import app from "../../components/firebase/firebase-config";
+
+import  {auth}from "../../components/firebase/firebase-config";
 import styles from '../../styles/Headerdasboard.module.css'
 import { useRouter } from "next/router";
-const auth = getAuth(app);
+
 import { withProtectede } from "../../components/scr/AuthStateChanged";
 function Categorias() {
   const { push } = useRouter();

@@ -1,10 +1,9 @@
 
 import React from "react";
-import { getAuth } from "firebase/auth";
-import app from "../firebase/firebase-config";
+import  {auth }from "../firebase/firebase-config";
 import { useRouter } from "next/router";
 import Vistausuario from "./userview/vistausuario";
-const auth = getAuth(app);
+
 function UserView({user}) {
 
 

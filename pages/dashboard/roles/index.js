@@ -1,12 +1,12 @@
 import React from "react";
 import Sidebar from "../../../components/dasboard/adminview/sidebar";
 import Roles from '../../../components/dasboard/adminview/usuario/App';
-import { getAuth } from "firebase/auth";
-import app from "../../../components/firebase/firebase-config";
+
+import { auth}from "../../../components/firebase/firebase-config";
 import styles from '../../../styles/Headerdasboard.module.css'
 import { useRouter } from "next/router";
 import { withProtectede } from "../../../components/scr/AuthStateChanged";
-const auth = getAuth(app);
+
 function Index() {
 
   const { push } = useRouter();
