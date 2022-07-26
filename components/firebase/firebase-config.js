@@ -1,14 +1,15 @@
-import { initializeApp,getApps, } from "firebase/app";
+import "firebase/compat/firestore";
+import "firebase/compat/auth";
+import "firebase/compat/app";
+import "firebase/compat/analytics";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+
+import { GoogleAuthProvider } from "firebase/auth";
 
 
-import {
-  getAuth,
- 
-  GoogleAuthProvider
-} from "firebase/auth";
 
-
-
+import { getAuth } from "firebase/auth";
 
 // Import the functions you need from the SDKs you need
 
@@ -17,7 +18,7 @@ import {
   getFirestore,
   doc,
   setDoc,
-  Firestore,
+  
   collection,
   addDoc,
   getDocs,
@@ -40,12 +41,13 @@ const firebaseConfig = {
 
 
 
-let analytics; let googleAuthProvider; let authh; let firebaseApp;let db;let firestore
-if (typeof window !== "undefined" && !getApps().length) {
+let analytics; let db; let googleAuthProvider;let authh;let firebaseApp;
+if (firebaseConfig?.projectId) {
+  // Initialize Firebase
   firebaseApp = initializeApp(firebaseConfig);
+  
   authh = getAuth(firebaseApp);
-firestore = getFirestore( firebaseApp);
-
+  
   if (firebaseApp.name && typeof window !== 'undefined') {
     analytics = getAnalytics(firebaseApp);
     logEvent(analytics, 'notification_received');
@@ -54,15 +56,7 @@ firestore = getFirestore( firebaseApp);
   // Access Firebase services using shorthand notation
   db = getFirestore();
   googleAuthProvider = new GoogleAuthProvider();
-
-
-
-}
-
-
-
-
-
+  }
 
 
 
@@ -77,10 +71,10 @@ firestore = getFirestore( firebaseApp);
 
 
 export {
-   authh, 
-   firebaseApp,
-   firestore,
- db,
+  
+  authh,
+  db,
+  firebaseApp,
   doc, //Referencia a documento en Firestore
   setDoc, // Setea Datos en la base de Firestore,
   collection,
@@ -89,8 +83,6 @@ export {
   googleAuthProvider,
   analytics
 }; 
-
-
 
 
 
