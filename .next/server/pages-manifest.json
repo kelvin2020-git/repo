@@ -2,11 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/Login": "pages/Login.html",
-  "/api/api": "pages/api/api.js",
-  "/api/hello": "pages/api/hello.js",
-  "/dashboard": "pages/dashboard.html",
-  "/": "pages/index.html",
-  "/register": "pages/register.html",
-  "/404": "pages/404.html"
+  "/": "pages/index.js",
+  "/Login": "pages/Login.js",
+  "/dashboard": "pages/dashboard.js"
 }
