@@ -6,7 +6,7 @@ import styles from '../../styles/Headerdasboard.module.css'
 import { useRouter } from "next/router";
 import { withProtectede } from "../../components/scr/AuthStateChanged";
 
-function Proyecto() {
+function proyecto() {
 
   const { push } = useRouter();
   const logout = () => {
@@ -43,4 +43,4 @@ function Proyecto() {
   );
 }
 
-export default withProtectede(Proyecto);
+export default withProtectede(proyecto);
