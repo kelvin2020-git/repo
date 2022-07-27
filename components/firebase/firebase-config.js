@@ -1,28 +1,13 @@
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-
-import { GoogleAuthProvider } from "firebase/auth";
-
-
-
 import { getAuth } from "firebase/auth";
-
-// Import the functions you need from the SDKs you need
-
+import { getFirestore } from "firebase/firestore";
+import { GoogleAuthProvider } from "firebase/auth";
 import { getAnalytics, logEvent } from "firebase/analytics";
-import {
-  getFirestore,
-  doc,
-  setDoc,
-  
-  collection,
-  addDoc,
-  getDocs,
-} from "firebase/firestore";
+// import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
+
 
 // Your web app's Firebase configuration
-
 
 const firebaseConfig = {
   apiKey: "AIzaSyBW4BkytN0_cFYzAk9a0ufSFMoAy4QiJpU",
@@ -35,21 +20,41 @@ const firebaseConfig = {
 };
 
 
-
-function firebaseApp() {
-  if (typeof window !== undefined) {
-      initializeApp(firebaseConfig);
-      console.log("Firebase has been init successfully");
-  }
-}
-
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+const db = getFirestore();
+// const appCheck = initializeAppCheck(app, {
+//   provider: new ReCaptchaV3Provider(process.env.RECAPTCHA),
+//   isTokenAutoRefreshEnabled: true,
+// });
+
+// Import the functions you need from the SDKs you need
+
+
+
+
+
+// Import the functions you need from the SDKs you need
+
+
+
+// Your web app's Firebase configuration
+
+
+
+
+
+
+
+
+
 
 
 
 
   
- const authh = getAuth(app);
+ 
   
   if (app.name && typeof window !== 'undefined') {
    const analytics = getAnalytics(app);
@@ -57,11 +62,12 @@ const app = initializeApp(firebaseConfig);
   }
   
   // Access Firebase services using shorthand notation
- const db = getFirestore();
+
  const googleAuthProvider = new GoogleAuthProvider();
  
 
 
+ export { auth, db,  googleAuthProvider, };
 
 // Initialize Firebase
 
@@ -72,19 +78,7 @@ const app = initializeApp(firebaseConfig);
 
 
 
-export {
-  
-  authh,
-  db,
-  firebaseApp,
-  doc, //Referencia a documento en Firestore
-  setDoc, // Setea Datos en la base de Firestore,
-  collection,
-  getDocs,
-  addDoc,
-  googleAuthProvider,
-
-}; 
+ 
 
 
 

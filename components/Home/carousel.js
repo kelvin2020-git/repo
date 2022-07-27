@@ -3,7 +3,8 @@ import Item from "./Item";
 import Carousel from "react-elastic-carousel";
 import Image from 'next/image';
 import styles from '../../styles/Caruosel.module.css'
-import { db, getDocs, collection } from "../firebase/firebase-config";
+import { db} from "../firebase/firebase-config";
+import {  getDocs, collection } from 'firebase/firestore'
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
   { width: 550, itemsToShow: 2, itemsToScroll: 2 },

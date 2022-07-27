@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import Image from 'next/image';
 import logo from '../../public/logo.webp'
-import firebaseApp from "../firebase/firebase-config";
+import {db,auth} from "../firebase/firebase-config";
 import styles from '../../styles/Navbar.module.css'
-import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { getFirestore, doc, getDoc } from "firebase/firestore";
+import {  onAuthStateChanged } from "firebase/auth";
+import {  doc, getDoc } from "firebase/firestore";
 import { useRouter } from "next/router";
 
-const auth = getAuth(firebaseApp);
-const firestore = getFirestore(firebaseApp);
+
+
 export default function Navbar() {
   const { push } = useRouter();
   const [user, setUser] = useState(null);
   const router = useRouter();
   async function getRol(uid) {
-    const docuRef = doc(firestore, `usuarios/${uid}`);
+    const docuRef = doc(db, `usuarios/${uid}`);
     const docuCifrada = await getDoc(docuRef);
     const infoFinal = docuCifrada.data().rol;
     return infoFinal;

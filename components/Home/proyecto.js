@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from 'next/image';
-import { db, getDocs, collection } from "../firebase/firebase-config";
+import { db } from "../firebase/firebase-config";
+import { getDocs, collection } from 'firebase/firestore';
 import styles from '../../styles/Proyecto.module.css'
 export default function Proyectos() {
   const [postNum, setPostNum] = useState(2);

@@ -3,9 +3,9 @@ import logo from '../../public/logo.webp'
 import Swal from "sweetalert2";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
-import  firebaseApp  from "../../components/firebase/firebase-config";
-import { authh } from "../../components/firebase/firebase-config";
-import { getFirestore, doc, setDoc, } from "firebase/firestore";
+
+import { auth,db } from "../../components/firebase/firebase-config";
+import {  doc, setDoc, } from "firebase/firestore";
 import styles from '../../styles/Login.module.css'
 import {
   signInWithPopup,
@@ -15,12 +15,12 @@ import {
 
 export default function Formlogin() {
   const { push } = useRouter();
-  const firestore = getFirestore(firebaseApp);
+ 
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   function submitHandler(data, e) {
     e.preventDefault();
-    signInWithEmailAndPassword(authh, data.email, data.password)
+    signInWithEmailAndPassword(auth, data.email, data.password)
       .then((result) => {
         const user = result.user;
         
@@ -40,7 +40,7 @@ export default function Formlogin() {
   const provider = new GoogleAuthProvider();
 
   const handleGoogleLogin = () => {
-    signInWithPopup(authh, provider)
+    signInWithPopup(auth, provider)
       .then((result) => {
         // This gives you a Google Access Token. You can use it to access the Google API.
         const credential = GoogleAuthProvider.credentialFromResult(result);
@@ -48,7 +48,7 @@ export default function Formlogin() {
         // The signed-in user info.
         const user = result.user;
         console.log({ credential, token, user });
-        const docuRef = doc(firestore, `usuarios/${user.uid}`);
+        const docuRef = doc(db, `usuarios/${user.uid}`);
         setDoc(docuRef, { nombre: user.displayName, correo: user.email, rol: "usuario", fecha: Date.now() });
         push("/dashboard");
       })

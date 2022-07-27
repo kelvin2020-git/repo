@@ -3,29 +3,29 @@ import Image from 'next/image';
 import logo from '../../public/logo.webp'
 import Swal from "sweetalert2";
 import { useRouter } from "next/router";
-import { authh} from "../../components/firebase/firebase-config";
-import  firebaseApp from "../../components/firebase/firebase-config";
+import { auth,db} from "../../components/firebase/firebase-config";
+
 import styles from '../../styles/Register.module.css'
 import {
   updateProfile,
   createUserWithEmailAndPassword,
 } from "firebase/auth";
 import { useForm } from "react-hook-form";
-import { getFirestore, doc, setDoc, } from "firebase/firestore";
+import { doc, setDoc, } from "firebase/firestore";
 export default function Formregister() {
-  const firestore = getFirestore(firebaseApp);
+
   const { register, handleSubmit, formState: { errors } } = useForm();
   const { push } = useRouter();
   const registerUser = async (email, password, name, rol) => {
     const infoUsuario = await createUserWithEmailAndPassword(
-      authh,
+      auth,
       email,
       password,
       name, rol
     ).then(({ user }) => {
       updateProfile(user, { displayName: name });
       console.log(user)
-      const docuRef = doc(firestore, `usuarios/${user.uid}`);
+      const docuRef = doc(db, `usuarios/${user.uid}`);
       setDoc(docuRef, { nombre: name, correo: email, rol: rol, fecha: Date.now() });
       push("/Login");
     }).then((usuarioFirebase) => {
