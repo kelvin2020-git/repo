@@ -1,15 +1,15 @@
 
 import React, { useState } from "react";
-import firebaseApp from "../firebase/firebase-config";
+import {auth,db} from "../firebase/firebase-config";
 import { onAuthStateChanged, getAuth, signOut } from "firebase/auth";
-import { getFirestore, doc, getDoc } from "firebase/firestore";
+import {  doc, getDoc } from "firebase/firestore";
 import Admin from "./admin";
-const firestore = getFirestore(firebaseApp);
-const auth = getAuth(firebaseApp);
+
+
 const Dasboard = () => {
   const [user, setUser] = useState(null);
   async function getRol(uid) {
-    const docuRef = doc(firestore, `usuarios/${uid}`);
+    const docuRef = doc(db, `usuarios/${uid}`);
     const docuCifrada = await getDoc(docuRef);
     const infoFinal = docuCifrada.data().rol;
     return infoFinal;
@@ -40,7 +40,7 @@ const Dasboard = () => {
 
   return (
     <>
-      {user && <Admin user={user} />}
+    <Admin />
     </>
 
   )

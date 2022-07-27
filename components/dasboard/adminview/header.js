@@ -1,10 +1,10 @@
 import React from 'react';
-import { getAuth } from "firebase/auth";
-import firebaseApp from "../../firebase/firebase-config";
+
+import {auth}from "../../firebase/firebase-config";
 import styles from '../../../styles/Headerdasboard.module.css'
 import { useRouter } from "next/router";
-const auth = getAuth(firebaseApp);
-const Header = ({ user }) => {
+
+const Header = () => {
   const { push } = useRouter();
   const logout = () => {
     auth.signOut();
@@ -19,7 +19,7 @@ const Header = ({ user }) => {
        <button className={styles.btnhome} onClick={home}> HOME</button>
       <div>
         <div className={styles.headertext}>
-          <h1 >Usuario : {user.name} </h1>  
+          <h1 >Usuario :  </h1>  
         </div>
  
         <button className={styles.btnlogout} onClick={logout}> Cerrar Sesión</button>

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Form, Button } from "react-bootstrap"
-import { db, addDoc } from "../../../../firebase/firebase-config";
-import { useState } from 'react';
-import { useForm } from "react-hook-form";
+import {db} from "../../../../firebase/firebase-config";
+import {useState } from 'react';
+import {useForm } from "react-hook-form";
 import Image from "next/image";
-import { onSnapshot, collection } from 'firebase/firestore';
+import { onSnapshot, collection,addDoc } from 'firebase/firestore';
 const AddForm = ({ onClose }) => {
   const [category, setCategory] = useState([]);
   useEffect(() => {

@@ -1,5 +1,5 @@
 import React, { useState, createContext, useEffect } from 'react';
-import { db } from "../../../../firebase/firebase-config";
+import {db} from "../../../../firebase/firebase-config";
 export const CategoryContext = createContext()
 import { onSnapshot, collection } from 'firebase/firestore';
 const CategoryContextProvider = (props) => {

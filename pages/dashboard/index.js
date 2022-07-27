@@ -1,16 +1,28 @@
 import React from 'react'
-import Dasboard from '../../components/dasboard/dasboard';
-import { withProtectede } from '../../components/scr/AuthStateChanged';
 
 
+import {auth}from "../../components/firebase/firebase-config";
+
+import { useRouter } from "next/router";
 
 
 
 
 
 function Index() {
+
+
+  const { push } = useRouter();
+  const logout = () => {
+    auth.signOut();
+    push("/")
+
+  };
     return (
-   <Dasboard/>
+  <>
+         <button  onClick={logout}> Cerrar Sesión</button>
+  <div>hola</div>
+  </>
     );
   }
   

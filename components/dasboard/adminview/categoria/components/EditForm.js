@@ -1,8 +1,8 @@
 import { Form, Button } from "react-bootstrap"
-import { app, db, getDocs, collection, addDoc } from "../../../../firebase/firebase-config";
+import {db} from "../../../../firebase/firebase-config";
 
 import { useState, useEffect } from 'react';
-import { doc, onSnapshot, setDoc, updateDoc } from "firebase/firestore";
+import { doc, onSnapshot, setDoc, updateDoc,getDocs, collection, addDo } from "firebase/firestore";
 
 import { useForm } from "react-hook-form";
 const EditForm = ({ thecategoria, onClose }) => {

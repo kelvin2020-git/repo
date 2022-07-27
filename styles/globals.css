@@ -370,8 +370,8 @@ clase para paginaciones de las tablas
 
 /* Modal styles */
 .modal {
-  position: fixed;
-  z-index: 990;
+
+
   top: 0;
   left: 0;
   width: 100%;

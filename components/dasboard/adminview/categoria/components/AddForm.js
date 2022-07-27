@@ -1,6 +1,7 @@
 import { Form, Button } from "react-bootstrap"
-import {  db,collection,addDoc }from "../../../../firebase/firebase-config";
-import { useForm } from "react-hook-form";
+import {db}from "../../../../firebase/firebase-config";
+import {collection,addDoc } from 'firebase/firestore';
+import {useForm} from "react-hook-form";
 const AddForm = ({onClose}) =>{
 
     const { register, handleSubmit,formState: { errors }} = useForm();

@@ -1,9 +1,10 @@
 import { useState, useEffect} from 'react';
 import Swal from "sweetalert2";
-import { Modal, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import {Modal, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import EditForm from './EditForm'
-import { deleteDoc } from "firebase/firestore";
-import {  db,doc }from "../../../../firebase/firebase-config";
+import {collection,addDoc,deleteDoc,doc} from 'firebase/firestore';
+
+import {  db }from "../../../../firebase/firebase-config";
 import moment from 'moment'
 import 'moment/locale/es' // Pasar a español
 

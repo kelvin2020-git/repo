@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { onSnapshot, collection } from 'firebase/firestore';
 import { db } from "../firebase/firebase-config";
 import { useRouter } from "next/router";
-const AdminView = ({ user }) => {
+const AdminView = () => {
   const { push } = useRouter();
   const [usuario, setUsuarios] = useState([]);
   const [category, setCategoria] = useState([]);
@@ -59,8 +59,8 @@ const AdminView = ({ user }) => {
   return (
 
     <>
-      <Header user={user} />
-      <Sidebar user={user} />
+      <Header  />
+      <Sidebar  />
       <section className="contenedorcard">
         <div className="container">
           <span className="titulopanel">Dashboard-Panel Administrativo</span>

@@ -1,13 +1,12 @@
 import React,{useState} from "react";
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import firebaseApp from "../../components/firebase/firebase-config";
+import {auth} from "../../components/firebase/firebase-config";
 
-import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
+import {  onAuthStateChanged } from "firebase/auth";
 
-const auth = getAuth(firebaseApp);
-const firestore = getFirestore(firebaseApp);
+
+
 
 export default function AuthStateChanged({ children }) {
 	

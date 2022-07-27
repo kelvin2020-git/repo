@@ -4,7 +4,7 @@ import CategoryContextProvider from './contexts/CategoriaContext';
 function Categoria() {
   return (
     <div className="" >
-  
+       
       <div className="table-responsive">
         <div >
           <CategoryContextProvider>

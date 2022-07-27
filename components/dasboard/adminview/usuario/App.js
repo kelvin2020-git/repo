@@ -4,7 +4,8 @@ import UsuariosContextProvider from './contexts/usuariosContext';
 function Usuario() {
   return (
     <div className="cont" >
-    
+        
+
       <div className="table-responsive">
         <div >
           <UsuariosContextProvider>

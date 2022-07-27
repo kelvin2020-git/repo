@@ -4,7 +4,7 @@ import ProyectoContextProvider from './contexts/ProyectoContext';
 function App() {
   return (
     <div className="cont" >
-
+    
       <div className="table-responsive">
         <div >
           <ProyectoContextProvider>

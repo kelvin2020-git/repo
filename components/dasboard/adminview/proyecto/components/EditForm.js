@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { Form, Button } from "react-bootstrap"
 import { db } from "../../../../firebase/firebase-config"
 import { useState } from 'react';
-import { doc, updateDoc } from "firebase/firestore";
+import { doc, updateDoc,onSnapshot, collection } from "firebase/firestore";
 import { useForm } from "react-hook-form";
 import Image from "next/image";
-import { onSnapshot, collection } from 'firebase/firestore';
+
 
 const EditForm = ({ theproyecto, onClose }) => {
   const { register, handleSubmit, formState: { errors } } = useForm();

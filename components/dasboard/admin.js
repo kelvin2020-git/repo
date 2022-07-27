@@ -1,13 +1,13 @@
 import React from 'react'
 
 import AdminView from './adminview';
-import UserView from './userview';
 
 
-function Admin({ user }) {
+
+function Admin() {
   return (
     <div>
-      {user.rol === "admin" ? <AdminView user={user} /> : <UserView user={user} />}
+     <AdminView />  
     </div>
   );
 }
