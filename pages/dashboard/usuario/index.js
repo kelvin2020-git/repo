@@ -1,9 +1,10 @@
 import React from "react";
-import Sidebar from "../../../../components/dasboard/adminview/sidebar";
+import Header from "../../../components/dasboard/adminview/header";
+import Sidebar from "../../../components/dasboard/adminview/sidebar";
 
 
 
-import styles from '../../../../styles/Headerdasboard.module.css'
+
 
 
 
@@ -13,12 +14,9 @@ function Index() {
   return (
     <>
     
-      <Sidebar />
-      <section className="app-contenedor">
-        <div className="container">
-          
-        </div>
-      </section>
+    < Header/>
+<Sidebar/>
+
     </>
 
   );
