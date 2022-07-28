@@ -6,17 +6,17 @@ import styles from '../../../styles/Sidebar.module.css'
 const Sidebar = () => {
   const { push } = useRouter();
   const categoria = () => {
-    push("/categoria");
+    push("/dashboard/categoria");
 
   };
   const usuario = () => {
-    push("/usuario");
+    push("/dashboard/usuario");
   };
   const dashboard = () => {
     push("/dashboard");
   };
   const proyecto = () => {
-    push("/proyecto");
+    push("/dashboard/proyecto");
 
   };
   return (
