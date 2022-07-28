@@ -7,7 +7,7 @@ import styles from '../../../styles/Headerdasboard.module.css'
 import { useRouter } from "next/router";
 
 import { withProtectede } from "../../../components/scr/AuthStateChanged";
-function categorias() {
+function Index() {
 
   const { push } = useRouter();
   const logout = () => {
@@ -38,4 +38,4 @@ function categorias() {
   );
 }
 
-export default withProtectede(categorias);
+export default withProtectede(Index);

@@ -1,12 +1,12 @@
 import React from "react";
-import App from '../../components/dasboard/adminview/proyecto/App';
-import Sidebar from "../../components/dasboard/adminview/sidebar";
-import {auth} from "../../components/firebase/firebase-config";
-import styles from '../../styles/Headerdasboard.module.css'
+import App from '../../../components/dasboard/adminview/proyecto/App';
+import Sidebar from "../../../components/dasboard/adminview/sidebar";
+import {auth} from "../../../components/firebase/firebase-config";
+import styles from '../../../styles/Headerdasboard.module.css'
 import { useRouter } from "next/router";
 import { withProtectede } from "../../../components/scr/AuthStateChanged";
 
-function proyecto() {
+function Index() {
 
   const { push } = useRouter();
   const logout = () => {
@@ -43,4 +43,4 @@ function proyecto() {
   );
 }
 
-export default withProtectede(proyecto);
+export default withProtectede(Index);
