@@ -46,14 +46,14 @@ const AdminView = () => {
 
   }, [])
   const goCategoria = () => {
-    push("/dashboard/categoria");
+    push("/categoria");
   };
   const goUsuario = () => {
-    push("/dashboard/roles");
+    push("/usuario");
   };
 
   const goProyecto = () => {
-    push("/dashboard/proyectos");
+    push("/proyecto");
   };
 
   return (
