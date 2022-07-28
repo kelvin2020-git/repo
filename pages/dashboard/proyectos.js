@@ -3,7 +3,7 @@ import React from 'react'
 
 import Header from '../../components/dasboard/adminview/header';
 import Sidebar from '../../components/dasboard/adminview/sidebar';
-import AdminView from '../../components/dasboard/adminview';
+import App from '../../components/dasboard/adminview/proyecto/App';
 
 
 
@@ -17,7 +17,11 @@ function Proyectos() {
   <>
 < Header/>
 <Sidebar/>
-<AdminView/>
+<section className="app-contenedor">
+        <div className="container">
+          <App />
+        </div>
+      </section>
   </>
     );
   }
