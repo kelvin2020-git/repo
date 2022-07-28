@@ -10,13 +10,13 @@ const Sidebar = () => {
 
   };
   const usuario = () => {
-    push("/dashboard/usuario");
+    push("/dashboard/roles");
   };
   const dashboard = () => {
     push("/dashboard");
   };
   const proyecto = () => {
-    push("/dashboard/proyecto");
+    push("/dashboard/proyectos");
 
   };
   return (
