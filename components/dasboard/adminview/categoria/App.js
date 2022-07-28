@@ -1,7 +1,7 @@
 import CategoryList from './components/categorialista';
 import CategoryContextProvider from './contexts/CategoriaContext';
 
-function Categoria() {
+function App() {
   return (
     <div className="" >
        
@@ -17,4 +17,4 @@ function Categoria() {
   );
 }
 
-export default Categoria;
+export default App;

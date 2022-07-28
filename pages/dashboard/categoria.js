@@ -5,7 +5,7 @@ import React from 'react'
 import Header from '../../components/dasboard/adminview/header';
 import Sidebar from '../../components/dasboard/adminview/sidebar';
 
-import Categoriaa from '../../components/dasboard/adminview/categoria/App';
+import App from '../../components/dasboard/adminview/categoria/App';
 
 
 
@@ -20,7 +20,7 @@ function Categoria() {
 <Sidebar/>
 <section className="app-contenedor">
         <div className="container">
-          <Categoriaa />
+          <App/>
         </div>
       </section>
   </>

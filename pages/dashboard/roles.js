@@ -6,7 +6,7 @@ import Header from '../../components/dasboard/adminview/header';
 import Sidebar from '../../components/dasboard/adminview/sidebar';
 
 
-import Roles from '../../components/dasboard/adminview/usuario/App';
+import App from '../../components/dasboard/adminview/usuario/App';
 
 
 
@@ -20,7 +20,7 @@ function Roles() {
 <Sidebar/>
 <section className="app-contenedor">
         <div className="container">
-          <Roles />
+          <App />
         </div>
       </section>
   </>

@@ -1,7 +1,7 @@
 import UsuariosList from './components/usuariosList';
 import UsuariosContextProvider from './contexts/usuariosContext';
 
-function Usuario() {
+function App() {
   return (
     <div className="cont" >
         
@@ -18,4 +18,4 @@ function Usuario() {
   );
 }
 
-export default Usuario;
+export default App;
