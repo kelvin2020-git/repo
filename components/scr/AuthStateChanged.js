@@ -33,11 +33,11 @@ export default function AuthStateChanged({ children }) {
 export function withProtectede(Component) {
 	return function WithProtected() {
 	
-		const router = useRouter();
+		const {push} = useRouter();
         onAuthStateChanged(auth, (user) => {
             
             if (!user) {
-                router.push("/Login");
+                push("/Login");
                 return <h1>Loading...</h1>;
             }
         })
