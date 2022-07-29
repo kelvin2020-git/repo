@@ -3,9 +3,9 @@ import React from "react";
 import  {auth} from "../firebase/firebase-config";
 import { useRouter } from "next/router";
 import Vistausuario from "./userview/vistausuario";
-
-function UserView({user}) {
-
+import useUser from '../scr/useUser';
+function UserView() {
+  const user = useUser()
 
   
   const { push } = useRouter();
@@ -20,7 +20,7 @@ function UserView({user}) {
     
   <div>
     <div className="header-text">
-    <h1 >Usuario : {user.name}</h1>
+    <h1 >Usuario : {user}</h1>
 
     </div>
       

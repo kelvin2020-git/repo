@@ -126,7 +126,7 @@ a {
 }
 
 #proyecto {
-  padding-top: 30px
+  padding-top: 40px
 }
 
 #nosotros {
@@ -134,7 +134,7 @@ a {
 }
 
 #contacto {
-  padding-top: 20px
+  padding-top: 40px
 }
 
 
@@ -528,11 +528,13 @@ estilos para card del table
 */
 
 .contenedorusuario {
+  background-color: white;
+
   position: relative;
-  width: 100%;
-  float: right;
+ 
+  float: center;
   height: 100vh;
-  bottom: 0;
+  margin-left: 0px;
 }
 
 
@@ -561,4 +563,14 @@ estilos para card del table
   color: #FFF;
   font-weight: bold;
   margin-top: 20px;
+}
+
+
+
+
+.card-footer{
+  border-color:transparent;
+}
+.text-white{
+  background-color: #0397d6;
 }

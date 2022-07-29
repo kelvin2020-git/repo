@@ -1,5 +1,7 @@
 import React from 'react'
+import { useEffect, useState } from "react"
 
+import { useRouter } from "next/router"
 
 
 import Header from '../../components/dasboard/adminview/header';
@@ -7,16 +9,18 @@ import Sidebar from '../../components/dasboard/adminview/sidebar';
 
 
 import App from '../../components/dasboard/adminview/usuario/App';
-
+import  {withProtectede } from '../../components/scr/useUser';
 
 
 function Roles() {
  
 
 
+
+
     return (
   <>
-< Header/>
+< Header />
 <Sidebar/>
 <section className="app-contenedor">
         <div className="container">
@@ -27,4 +31,4 @@ function Roles() {
     );
   }
   
-  export default Roles;
+  export default withProtectede(Roles);

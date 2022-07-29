@@ -1,6 +1,7 @@
 .proyectocontenedor {
     background-color: rgb(236, 243, 244);
     width: 1263px;
+    height: 100%;
     margin-top: 250px;
 }
 
@@ -17,8 +18,7 @@
 .barraseparador {
     width: 120px;
     height: 10px;
-    margin-bottom: 30px;
-    margin-top: -80px;
+    margin-top: -30px;
     margin-left: 600px;
     justify-content: center;
     background-color: rgb(222, 111, 26);
@@ -51,8 +51,11 @@
 
 
 .btnloadmore {
-    padding: 10px 20px;
-    margin: 20px 0 30px 0;
+    padding: 10px 10px!important;
+    margin: 20px 0 30px 0 !important;
+ border-radius: 10%;
+ font-size: 14px;
+ border-color: rgba(194, 198, 202, 0.852);
     cursor: pointer;
 }
 
@@ -87,7 +90,7 @@
     width: 120px;
     height: 10px;
     margin-bottom: 30px;
-    margin-top: 150px;
+    margin-top: 110px;
     margin-left: 600px;
     justify-content: center;
     background-color: rgb(222, 111, 26);

@@ -17,13 +17,6 @@ const UsuariosContextProvider  = (props) => {
     })
       
   },[])
-useEffect(()=> {
-  setUsuarios(JSON.parse(localStorage.getItem('user')))
-},[])
-
-useEffect(() => {
-    localStorage.setItem('user', JSON.stringify(usuario));
-})
 
 
 

@@ -11,18 +11,22 @@
   opacity: 0.9;
   z-index: 1
 }
-
+.navbartext:hover a{
+  color: rgb(231, 149, 16);
+  text-decoration: none;
+}
 .navbartext {
   float: left;
   display: block;
   color: #f2f2f2;
+  text-decoration: none;
   font-size: 12px;
   padding: 0rem 2rem;
 }
 
 .navbartext:hover {
   color: rgb(231, 149, 16);
-
+cursor:pointer
 }
 
 .flex,
@@ -32,6 +36,11 @@
   position: relative;
 }
 
+.listaiteminner:hover  a{
+  color: rgb(231, 149, 16);
+  text-decoration: none;
+
+}
 .listaiteminner {
   float: left;
   display: block;
@@ -84,7 +93,7 @@
 .listaiteminner:hover,
 .listaiteminner:hover>.listaenlace {
   background-color: var(--color);
-  color: rgb(231, 149, 16);
+  color: rgb(231, 149, 16)!important;
   z-index: 10;
   font-size: 12px;
   text-align: center;

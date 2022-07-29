@@ -7,7 +7,7 @@ import Sidebar from '../../components/dasboard/adminview/sidebar';
 
 import App from '../../components/dasboard/adminview/categoria/App';
 
-
+import  {withProtectede } from '../../components/scr/useUser';
 
 
 function Categoria() {
@@ -27,4 +27,4 @@ function Categoria() {
     );
   }
   
-  export default Categoria;
+  export default withProtectede(Categoria);

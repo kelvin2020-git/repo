@@ -11,9 +11,9 @@ import Servicios from '../components/Home/servicios';
 import Head from "next/head";
 
 
+
 export default function Home() {
 
- 
   return (
     <>
          <Head>

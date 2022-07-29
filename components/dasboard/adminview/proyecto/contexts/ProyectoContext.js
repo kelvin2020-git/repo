@@ -21,13 +21,7 @@ const ProyectoContextProvider  = (props) => {
     })
       
   },[])
-useEffect(()=> {
-  setProyectos(JSON.parse(localStorage.getItem('proyecto')))
-},[])
 
-useEffect(() => {
-    localStorage.setItem('proyecto', JSON.stringify(proyectos));
-})
 
 
 

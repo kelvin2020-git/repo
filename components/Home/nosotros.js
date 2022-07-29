@@ -20,7 +20,7 @@ export default function Nosotro() {
               src={nosotros}
               alt={nosotros}
               width="623px"
-              height="650px"
+              height="700px"
             />
           </div>
         </div>

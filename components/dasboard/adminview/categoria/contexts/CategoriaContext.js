@@ -18,13 +18,7 @@ const CategoryContextProvider = (props) => {
     })
 
   }, [])
-  useEffect(() => {
-    setCategoria(JSON.parse(localStorage.getItem('categoria')))
-  }, [])
 
-  useEffect(() => {
-    localStorage.setItem('categoria', JSON.stringify(category));
-  })
   const sortedCategory = category.sort((a, b) => (a.nombre < b.nombre ? -1 : 1));
   return (
     <CategoryContext.Provider value={{ sortedCategory}}>
