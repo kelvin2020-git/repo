@@ -10,11 +10,12 @@ import Image from "next/image";
 const EditForm = ({ theproyecto, onClose }) => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const id = theproyecto.id;
+  const fotoo = theproyecto.foto;
   const [nombre, setNombre] = useState(theproyecto.nombre);
   const [descripcion, setDescripcion] = useState(theproyecto.descripcion);
   const [categoria, setCategoria] = useState(theproyecto.categoria);
   const [foto] = useState(theproyecto.foto);
-  const [file, setFile] = useState(null)
+  const [file, setFile] = useState(fotoo)
   const [category, setCategory] = useState([]);
   useEffect(() => {
     const docRef = collection(db, 'categoria')

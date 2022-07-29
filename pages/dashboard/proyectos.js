@@ -4,7 +4,7 @@ import React from 'react'
 import Header from '../../components/dasboard/adminview/header';
 import Sidebar from '../../components/dasboard/adminview/sidebar';
 import App from '../../components/dasboard/adminview/proyecto/App';
-import  {withProtectede } from '../../components/scr/useUser';
+import  {withProtectede } from '../../components/scr/AuthStateChanged';
 
 
 
@@ -26,4 +26,4 @@ function Proyectos() {
     );
   }
   
-  export default Proyectos;
+  export default withProtectede(Proyectos);

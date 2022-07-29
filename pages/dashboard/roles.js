@@ -7,7 +7,7 @@ import Sidebar from '../../components/dasboard/adminview/sidebar';
 
 
 import App from '../../components/dasboard/adminview/usuario/App';
-
+import  {withProtectede } from '../../components/scr/AuthStateChanged';
 
 
 function Roles() {
@@ -29,4 +29,4 @@ function Roles() {
     );
   }
   
-  export default Roles;
+  export default withProtectede(Roles);
