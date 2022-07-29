@@ -1,7 +1,5 @@
 import React from 'react'
-import { useEffect, useState } from "react"
 
-import { useRouter } from "next/router"
 
 
 import Header from '../../components/dasboard/adminview/header';
