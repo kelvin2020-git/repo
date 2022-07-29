@@ -26,4 +26,4 @@ function Proyectos() {
     );
   }
   
-  export default withProtectede(Proyectos);
+  export default Proyectos;

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import {  useState } from "react"
 import { onAuthStateChanged } from "firebase/auth"
 import { useRouter } from "next/router"
 import {  doc, getDoc } from "firebase/firestore";
@@ -8,7 +8,7 @@ import {auth,db} from "../../components/firebase/firebase-config";
 export default function useRol() {
 
     const [user, setUser] = useState(null);
-    const router = useRouter();
+   
     async function getRol(uid) {
       const docuRef = doc(db, `usuarios/${uid}`);
       const docuCifrada = await getDoc(docuRef);
