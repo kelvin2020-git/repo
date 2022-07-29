@@ -7,18 +7,16 @@ import Sidebar from '../../components/dasboard/adminview/sidebar';
 
 
 import App from '../../components/dasboard/adminview/usuario/App';
-import  {withProtectede } from '../../components/scr/AuthStateChanged';
+
 
 
 function Roles() {
  
 
 
-
-
     return (
   <>
-< Header />
+< Header/>
 <Sidebar/>
 <section className="app-contenedor">
         <div className="container">
@@ -29,4 +27,4 @@ function Roles() {
     );
   }
   
-  export default withProtectede(Roles);
+  export default Roles;
