@@ -37,7 +37,7 @@ export function withProtectede(Component) {
         onAuthStateChanged(auth, (user) => {
             
             if (!user) {
-                router.replace("/Login");
+                router.push("/Login");
                 return <h1>Loading...</h1>;
             }
         })
