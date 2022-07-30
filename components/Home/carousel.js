@@ -39,7 +39,7 @@ export default function Caruseles() {
       <div className={styles.carouselwrapper}>
         <Carousel breakPoints={breakPoints} enableAutoPlay autoPlaySpeed={2500}>
           {lista.map(post => (<div key={post.id}><div>
-            <Item key={post}><Image src={post?.foto} width="500px" height="600px" alt={post?.nombre} /></Item>
+            <Item key={post}><Image src={post?.foto} width="500px" height="500px" alt={post?.nombre} /></Item>
           </div>
 
           </div>

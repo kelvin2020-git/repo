@@ -1,5 +1,5 @@
 
-
+import { useContext, useEffect } from 'react'
 
 import Contactos from '../components/Home/contacto';
 import Footer from '../components/Home/footer';
@@ -11,9 +11,14 @@ import Servicios from '../components/Home/servicios';
 import Head from "next/head";
 
 
+import AuthContext from '../store/auth.context'
+
+
+
 
 export default function Home() {
-
+  const {user, loading} = useContext(AuthContext);
+  console.log(user)
   return (
     <>
          <Head>
