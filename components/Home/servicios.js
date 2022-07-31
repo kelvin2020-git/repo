@@ -11,7 +11,7 @@ export default function Servicios() {
 
       <section className={styles.servicios} id="servicios">
         <span>SERVICIOS</span>
-        <p className="servicios-p"></p>
+        <p className={styles.serviciosp}></p>
         <div className={styles.grid}>
           <article>
             <Image

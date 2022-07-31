@@ -103,7 +103,7 @@ export default function Formlogin() {
             {errors.email && <span className={errors.email && "mensajeError"}>{errors.email.message}</span>}
             <div>
               <label className={styles.label}>Contraseña</label>
-              <input className={styles.input} type="text" placeholder="Ingrese su contraseña" id="password"
+              <input className={styles.input} type="password" placeholder="Ingrese su contraseña" id="password"
                 {...register("password", {
                   required: {
                     value: true,

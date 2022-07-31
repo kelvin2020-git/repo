@@ -136,7 +136,9 @@ a {
 #contacto {
   padding-top: 40px
 }
-
+#valores{
+  padding-top: 100px
+}
 
 
 :root {
@@ -574,3 +576,4 @@ estilos para card del table
 .text-white{
   background-color: #0397d6;
 }
+

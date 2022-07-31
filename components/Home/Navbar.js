@@ -68,8 +68,15 @@ export default function Navbar() {
               <li className={styles.listaiteminner}> <a href="#servicios">SERVICIOS</a></li>
             </ul>
           </li>
+          <li className={styles.listaitemouterr}>
+            <a className={styles.listaenlace} href="#nosotros">NOSOTROS</a>
+            <ul className={styles.listainner}>
+           
+              <li className={styles.listaiteminner}> <a href="#valores">VALORES</a></li>
+            </ul>
+          </li>
           {user ? <li className={styles.navbartext}><a onClick={Dasboard}>DASHBOARD</a></li>:<a /> }
-          <li className={styles.navbartext}><a href="#nosotros">NOSOTROS</a></li>
+         
           <li className={styles.navbartext}><a href="#proyecto" >PROYECTOS</a></li>
           <li className={styles.navbartext}><a href="#contacto">CONTACTOS</a></li>
 

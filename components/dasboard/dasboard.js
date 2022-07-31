@@ -1,8 +1,6 @@
 
-import React, { useState } from "react";
-import {auth,db} from "../firebase/firebase-config";
-import { onAuthStateChanged, getAuth, signOut } from "firebase/auth";
-import {  doc, getDoc } from "firebase/firestore";
+import React from "react";
+;
 import Admin from "./admin";
 import useRol from '../scr/useRol';
 

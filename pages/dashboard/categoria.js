@@ -1,30 +1,25 @@
+
 import React from 'react'
+import { useRouter } from 'next/router';
+import { useContext } from 'react'
+import AuthContext from '../../store/auth.context'
+import Categoriadashboard from '../../components/dasboard/categoriadashboard';
 
 
+function  Categoria() {
+    const {user, loading} = useContext(AuthContext);
+    const {push} = useRouter();
+    
+ if (!user && !loading) {
 
-import Header from '../../components/dasboard/adminview/header';
-import Sidebar from '../../components/dasboard/adminview/sidebar';
+  push("/Login");
+  return <h1>Loading...</h1>;
+     
+    }else {
+      return (
+      <Categoriadashboard/>
+          );
+    }
+}
 
-import App from '../../components/dasboard/adminview/categoria/App';
-
-
-
-
-function Categoria() {
- 
-
-
-    return (
-  <>
-< Header/>
-<Sidebar/>
-<section className="app-contenedor">
-        <div className="container">
-          <App/>
-        </div>
-      </section>
-  </>
-    );
-  }
-  
-  export default Categoria;
+export default  Categoria

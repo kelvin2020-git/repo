@@ -12,6 +12,7 @@ import Head from "next/head";
 
 
 import AuthContext from '../store/auth.context'
+import Valores from '../components/Home/valores';
 
 
 
@@ -23,6 +24,7 @@ export default function Home() {
     <>
          <Head>
       <title>INICIO</title>
+  
       <meta name="description" content="Lideres en acabados!" />
   <meta property="og:title" content="About - STRONG CONCRETE" />
   <meta property="og:description" content="Lideres en acabados!" />
@@ -36,8 +38,9 @@ export default function Home() {
       
       <section>
 
-     
 <Inicio/>
+
+<Valores/>
 <Servicios/>
 <Nosotro/>
 <Proyectos/>
