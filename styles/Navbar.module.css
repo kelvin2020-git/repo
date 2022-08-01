@@ -164,12 +164,7 @@ cursor:pointer
     margin-top: -200px;
     height: 180px;
     background-color: rgb(131, 132, 134);
-
-
-
     background-color: rgb(131, 132, 134);
- 
-  ;
     opacity: 0.9;
     z-index: 1
 
@@ -215,37 +210,6 @@ cursor:pointer
 
   
   }
-  
-  
- 
-  
-
-  
-  
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .flex,
   .listaiteminner,
   .listaitemouter,
@@ -282,14 +246,320 @@ cursor:pointer
 
   }
   
-  
-  
   .listaitemouter:hover .listainner {
-   
     animation: 300ms ease desplegar 1;
   
   }
+  .listaitemouter:not(:first-of-type) {
+    border-left: 1px solid var(--color);
+  }
   
+  
+  .listaiteminner:not(:first-of-type) {
+    border-top: 1px solid var(--color);
+  }
+  
+  .listaitem {
+    color: var(--color);
+  
+  }
+  
+  .listaitem,
+  .listaenlace {
+    transition: 300ms ease;
+  }
+  
+  .listaitemouter:hover,
+  .listaitemouter:hover>.listaenlace,
+  .listaiteminner:hover,
+  .listaiteminner:hover>.listaenlace {
+    background-color: var(--color);
+    color: rgb(231, 149, 16)!important;
+    z-index: 10;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .listaenlace {
+    text-decoration: none;
+    padding: 0 15px;
+    color: white;
+    min-height: 50px;
+    text-align: center;
+  }
+  
+  .listainner {
+    display: none;
+    position: absolute;
+    margin: auto;
+    transform-origin: center top;
+    text-align: center;
+    padding: 0;
+    height: 50px;
+   width: 70px;
+    color: rgb(236, 233, 227);
+    background-color: rgb(19, 18, 18);
+  }
+  
+  @keyframes desplegar {
+    from {
+      transform: scaleY(1.0);
+  
+  
+    }
+  }
+}
+
+
+
+
+@media (max-width: 520px) { 
+
+  .navbar {
+    margin-top: -200px;
+    height: 180px;
+    background-color: rgb(131, 132, 134);
+    background-color: rgb(131, 132, 134);
+    opacity: 0.9;
+    z-index: 1
+
+  }
+  .navbartext:hover a{
+    color: rgb(231, 149, 16);
+    text-decoration: none;
+  }
+  .navbartext {
+
+
+ 
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 11px;
+    padding: 0rem 0.9rem;
+    margin-top: 50px;
+   
+  }
+  .navbardiv  {
+
+    margin-left: -350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+
+  
+
+ 
+  }
+  .navbartext:hover {
+    color: rgb(231, 149, 16);
+  cursor:pointer
+  }
+
+  
+  .logo {
+    margin-top:-80px;
+ margin-left:190px;
+ width: 100px;
+ height: 100px;
+
+  
+  }
+  .flex,
+  .listaiteminner,
+  .listaitemouter,
+  .listaenlace {
+    position: relative;
+  }
+  
+  .listaiteminner:hover  a{
+    color: rgb(231, 149, 16);
+    text-decoration: none;
+  
+  }
+  .listaiteminner {
+    float: left;
+  
+    color: #f2f2f2;
+    font-size: 11px;
+    padding: 0.1rem 0.1rem 0.1rem;
+  
+  }
+  
+  .listaitemouter {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    font-size: 11px;
+   
+    list-style: none;
+    padding: 0;
+    border: 1px solid var(--color);
+    text-decoration: none;
+  
+    margin-top: 70px;
+margin-left: -10px;
+  }
+  
+  .listaitemouter:hover .listainner {
+    animation: 300ms ease desplegar 1;
+  
+  }
+  .listaitemouter:not(:first-of-type) {
+    border-left: 1px solid var(--color);
+  }
+  
+  
+  .listaiteminner:not(:first-of-type) {
+    border-top: 1px solid var(--color);
+  }
+  
+  .listaitem {
+    color: var(--color);
+  
+  }
+  
+  .listaitem,
+  .listaenlace {
+    transition: 300ms ease;
+  }
+  
+  .listaitemouter:hover,
+  .listaitemouter:hover>.listaenlace,
+  .listaiteminner:hover,
+  .listaiteminner:hover>.listaenlace {
+    background-color: var(--color);
+    color: rgb(231, 149, 16)!important;
+    z-index: 10;
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .listaenlace {
+    text-decoration: none;
+    padding: 0 15px;
+    color: white;
+    min-height: 50px;
+    text-align: center;
+  }
+  
+  .listainner {
+    display: none;
+    position: absolute;
+    margin: auto;
+    transform-origin: center top;
+    text-align: center;
+    padding: 0;
+    height: 50px;
+   width: 70px;
+    color: rgb(236, 233, 227);
+    background-color: rgb(19, 18, 18);
+  }
+  
+  @keyframes desplegar {
+    from {
+      transform: scaleY(1.0);
+  
+  
+    }
+  }
+}
+
+
+@media (max-width: 410px) { 
+
+  .navbar {
+    margin-top: -200px;
+    height: 180px;
+    background-color: rgb(131, 132, 134);
+    background-color: rgb(131, 132, 134);
+    opacity: 0.9;
+    z-index: 1
+
+  }
+  .navbartext:hover a{
+    color: rgb(231, 149, 16);
+    text-decoration: none;
+  }
+  .navbartext {
+
+
+ 
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 0rem 0.9rem;
+    margin-top: 50px;
+   
+  }
+  .navbardiv  {
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -240px;
+
+  
+
+ 
+  }
+  .navbartext:hover {
+    color: rgb(231, 149, 16);
+  cursor:pointer
+  }
+
+  
+  .logo {
+    margin-top:-80px;
+ margin-left:150px;
+ width: 100px;
+ height: 100px;
+
+  
+  }
+  .flex,
+  .listaiteminner,
+  .listaitemouter,
+  .listaenlace {
+    position: relative;
+  }
+  
+  .listaiteminner:hover  a{
+    color: rgb(231, 149, 16);
+    text-decoration: none;
+  
+  }
+  .listaiteminner {
+    float: left;
+  
+    color: #f2f2f2;
+    font-size: 10px;
+    padding: 0.1rem 0.1rem 0.1rem;
+  
+  }
+  
+  .listaitemouter {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    font-size: 10px;
+   
+    list-style: none;
+    padding: 0;
+    border: 1px solid var(--color);
+    text-decoration: none;
+    width: max-content;
+    margin-top: 70px;
+
+  }
+  
+  .listaitemouter:hover .listainner {
+    animation: 300ms ease desplegar 1;
+  
+  }
   .listaitemouter:not(:first-of-type) {
     border-left: 1px solid var(--color);
   }

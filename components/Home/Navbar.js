@@ -82,11 +82,11 @@ export default function Navbar() {
           <li className={styles.navbartext}><a href="#nosotros">NOSOTROS</a></li>
           <li className={styles.navbartext}><a href="#proyecto" >PROYECTOS</a></li>
           <li className={styles.navbartext}><a href="#contacto">CONTACTOS</a></li>
-
+          {user ? <a /> : <li className={styles.navbartext}><a onClick={logout}>INICIO SESIÓN</a></li>}
          </div>
           
 
-          {user ? <a /> : <li className={styles.navbartext}><a onClick={logout}>INICIO SESIÓN</a></li>}
+         
         </nav>
       </div>
     </div>
