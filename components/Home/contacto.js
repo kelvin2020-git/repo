@@ -37,9 +37,12 @@ export default function Contactos() {
     <>
 
       <section id="contacto" className={styles.contactocontenedor}>
-        <h3 className={styles.contactotitulo}>CONTACTO</h3>
+      
+        <h3 className={styles.contactotitulo}>CONTACTO</h3> 
         <div className={styles.barraseparador}></div>
-        <div><MyComponent /> </div>
+        <div className={styles.imagen}>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d898.3167800246069!2d-80.19228017079179!3d25.761739106788706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ef8b1ca19e3e839!2zMjXCsDQ1JzQyLjMiTiA4MMKwMTEnMzAuMiJX!5e0!3m2!1ses-419!2shn!4v1659416514855!5m2!1ses-419!2shn" width="100%" height="100%"   loading="lazy" ></iframe>
+         </div>
         <div className={styles.contactogrid}>
           <div className={styles.contactogridcontenedor}>
             <div className={styles.contactogridtitulo}>Preguntas</div>
@@ -108,7 +111,7 @@ export default function Contactos() {
               <div>
                 <label htmlFor="message" id="labeltext">Déjanos un mensaje ...</label>
                 <textarea id="message" {...register("message", {}
-                )} style={{ height: "120px", width: "420px" }} />
+                )} style={{ height: "100px", width: "220px" }} />
               </div>
 
               <button type="submit" className={styles.formulariobutton}>{status}</button>
