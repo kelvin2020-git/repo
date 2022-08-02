@@ -65,13 +65,7 @@ export default function Navbar() {
       </div>
       <div>
         <nav>
-          <li className={styles.listaitemouter}>
-            <a className={styles.listaenlace} href="#inicio">INICIO</a>
-            <ul className={styles.listainner}>
-            <li className={styles.listaiteminner}> <a href="#valores">VALORES</a></li>
-              <li className={styles.listaiteminner}> <a href="#servicios">SERVICIOS</a></li>
-            </ul>
-          </li>
+         
         
             
             
@@ -84,7 +78,13 @@ export default function Navbar() {
           <li className={styles.navbartext}><a href="#contacto">CONTACTOS</a></li>
           {user ? <a /> : <li className={styles.navbartext}><a onClick={logout}>INICIO SESIÓN</a></li>}
          </div>
-          
+         <li className={styles.listaitemouter}>
+            <a className={styles.listaenlace} href="#inicio">INICIO</a>
+            <ul className={styles.listainner}>
+            <li className={styles.listaiteminner}> <a href="#valores">VALORES</a></li>
+              <li className={styles.listaiteminner}> <a href="#servicios">SERVICIOS</a></li>
+            </ul>
+          </li>
 
          
         </nav>
