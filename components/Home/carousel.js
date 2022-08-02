@@ -7,8 +7,9 @@ import { db} from "../firebase/firebase-config";
 import {  getDocs, collection } from 'firebase/firestore'
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-  { width: 768, itemsToShow: 3 },
+  { width: 360, itemsToShow: 3, itemsToScroll: 2 },
+  { width: 520, itemsToShow: 3 },
+  { width: 410, itemsToShow: 3 },
   { width: 1200, itemsToShow: 3 }
 ];
 export default function Caruseles() {
@@ -38,8 +39,10 @@ export default function Caruseles() {
       <hr className="seperator" />
       <div className={styles.carouselwrapper}>
         <Carousel breakPoints={breakPoints} enableAutoPlay autoPlaySpeed={2500}>
-          {lista.map(post => (<div key={post.id}><div>
+          {lista.map(post => (<div key={post.id} className={styles.imagen}>
             <Item key={post}><Image src={post?.foto} width="500px" height="500px" alt={post?.nombre} /></Item>
+            <div>
+           
           </div>
 
           </div>
