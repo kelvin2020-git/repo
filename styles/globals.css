@@ -96,6 +96,102 @@ a {
   color: rgb(255, 254, 254);
   text-align: center;
 }
+@media (max-width: 410px) { 
+
+  .rec.rec-arrow {
+    position: relative;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 0%;
+    border-color: #a8a3a3!important;
+    background: #eee;
+    box-sizing: border-box;
+    border: 0px tomato;
+    background-color: transparent!important;
+  }
+
+  
+  
+  
+}
+@media (max-width: 520px) { 
+
+  .rec.rec-arrow {
+    position: relative;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 0%;
+    border-color: #a8a3a3!important;
+    background: #eee;
+    box-sizing: border-box;
+    border: 0px tomato;
+    background-color: transparent!important;
+  }
+  .rec-arrow-right {
+    left: -10px;
+    width: 10px !important;
+    height: 10px !important;
+    z-index: 2;
+  }
+  
+  
+  .rec-arrow-left {
+    left: 110px;
+    z-index: 2;
+  }
+  
+  .rec.rec-arrow-left {
+    margin-left: -110px;
+    z-index: 1;
+  }
+  
+  .rec.rec-arrow-right {
+    margin-left: -110px;
+    z-index: 2;
+  }
+  
+}
+@media (max-width: 360px) { 
+
+  .rec.rec-arrow {
+    position: relative;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 0%;
+    border-color: #a8a3a3!important;
+    background: #eee;
+    box-sizing: border-box;
+    border: 0px tomato;
+    background-color: transparent!important;
+  }
+  
+  .rec-arrow-right {
+    left: -10px;
+    width: 10px !important;
+    height: 10px !important;
+    z-index: 2;
+  }
+  
+  
+  .rec-arrow-left {
+    left: 50px;
+    z-index: 2;
+  }
+  
+  .rec.rec-arrow-left {
+    margin-left: -50px;
+    z-index: 1;
+  }
+  
+  .rec.rec-arrow-right {
+    margin-left: -50px;
+    z-index: 2;
+  }
+  
+}
+  
+  
+  
 
 
 /*clase para el posionamiento al darle click en el navbar y centrar los titulos*/

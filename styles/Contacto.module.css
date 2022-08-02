@@ -357,31 +357,31 @@ margin-left: 20px;
     }
     .contactogridcontenido {
         font-family: "Abril Fatface";
-        margin-top: 15px;
+        margin-top: 14px;
         font-weight: bolder;
-        line-height: 1.1em;
+        line-height: 1.0em;
         font-size: 13px;
-        width: 200px;
+        width: 190px;
        margin-left: 200px;
     }
     .contactogridtitulocontenido {
         font-size: 17px;
-        margin-left: 180px;
+        margin-left: 195px;
         margin-top: 0px;
         font-family: sans-serif;
         font-weight: bold;
     }
     .contactocontenido {
-        font-size: 11px;
-        margin-left: 180px;
+        font-size: 10px;
+        margin-left: 195px;
         margin-top: 20px;
-        line-height: 1.5em;
+        line-height: 1.4em;
         font-family: sans-serif;
         font-weight: bold;
     }
     .contactonumero {
         font-size: 10px;
-        margin-left: 180px;
+        margin-left: 195px;
         margin-top: 10px;
         font-family: sans-serif;
         font-weight: bold;
@@ -457,7 +457,7 @@ margin-left: 20px;
     .imagen {
         width: 300px;
         height: 200px;
-      margin-left:20px
+      margin-left:40px
       
       };
        

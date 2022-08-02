@@ -113,7 +113,7 @@ margin-top: 100px;
     
     .grid>article {
         width: 450px;
-        height: 200px;
+        height: 230px;
         margin: 20px;
         box-shadow:  4px 4px 4px 4px  rgba(0, 0, 0, 0.3);
     }
@@ -195,7 +195,7 @@ margin-top: 100px;
     
     .grid>article {
         width: 350px;
-        height: 200px;
+        height: 230px;
         margin: 20px;
         box-shadow:  4px 4px 4px 4px  rgba(0, 0, 0, 0.3);
     }
@@ -275,7 +275,7 @@ margin-top: 100px;
     
     .grid>article {
         width: 280px;
-        height: 220px;
+        height: 230px;
         margin: 20px;
         box-shadow:  4px 4px 4px 4px  rgba(0, 0, 0, 0.3);
     }
