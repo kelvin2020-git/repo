@@ -118,8 +118,8 @@ a {
 
   .rec.rec-arrow {
     position: relative;
-    width: 100px !important;
-    height: 100px !important;
+    width: 50px !important;
+    height: 50px !important;
     border-radius: 0%;
     border-color: #a8a3a3!important;
     background: #eee;
@@ -155,8 +155,8 @@ a {
 
   .rec.rec-arrow {
     position: relative;
-    width: 100px !important;
-    height: 100px !important;
+    width: 50px !important;
+    height: 50px !important;
     border-radius: 0%;
     border-color: #a8a3a3!important;
     background: #eee;

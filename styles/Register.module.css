@@ -79,47 +79,181 @@
     cursor: pointer;
   }
   
-  @media screen and (max-width: 1000px) {
-    .registercontainer .input .label {
-        width: 70%;
-        margin-top: 3rem;
-    }
-    .registerinfo-container {
-        width: 100%;
-        border-radius: 5px;
+  @media (max-width: 520px) { 
+
+    .registercontainer {
+        height: 35.75em;
+        width: 400px;
+       margin-left: 40px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    
     }
     
-     
-  }
-  
-  
-  @media screen and (max-width: 650px) {
+    .registerinfocontainer {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 0.5rem;
+        backdrop-filter: blur(50px);
+        background-color: #88878867;
+    }
+    
+    .registerinfocontainer>p {
+        font-size: 1.25em;
+        margin-top: 1.5em;
+    }
+    
+    .inputscontainer {
+        height: 55%;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .inputscontainer .input,
+    .btn {
+        width: 290px;
+        height: 2.700rem;
+        font-size: 0.9em;
+    }
+    
+    .inputscontainer .label {
+        font-weight: 600;
+        margin-left: 0px;
+        display: flex;
+        padding-bottom: 10px;
+        font-size: 14px;
+        color: #5c575cec;
+    }
+    
+    .inputscontainer .input {
+        padding-left: 10px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        box-sizing: border-box;
+    }
+    
+    .inputscontainer .input:hover {
+        border: 2px solid var(--button-bg);
+    }
+    
+    .btn {
+        width: 80%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--button-bg);
+        cursor: pointer;
+    }
+    
+    .regresar {
+        font-weight: 500;
+        margin-left: -200px;
+        display: flex;
+        padding-top: 20px;
+        font-size: 16px;
+        color: #242424ec;
+    }
+    
+}
+
+
+@media (max-width: 410px) { 
+
     .registercontainer {
-        width: 90%;
+        height: 32.75em;
+        width: 380px;
+       margin-left: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    
     }
-    .registerinfo-container{
-      width: 90%;
-      height: 90%;
-  }
-  }
-  
-  @media screen and (max-width: 500px) {
-    .logincontainer {
-        height: 90%;
+    
+    .registerinfocontainer {
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 0.5rem;
+        backdrop-filter: blur(50px);
+        background-color: #88878867;
     }
-    .logininfocontainer{
-      width: 70%;
-      height: 70%;
-  }
-  
-  
-  }
-  @media screen and (max-width: 200px) {
-  .logincontainer {
-      height: 90%;
-  }
-  .logininfocontainer{
-    width: 50%;
-    height: 50%;
-  }
-  }
+    
+    .registerinfocontainer>p {
+        font-size: 1.25em;
+        margin-top: 1.5em;
+    }
+    
+    .inputscontainer {
+        height: 55%;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .inputscontainer .input,
+    .btn {
+        width: 269px;
+        height: 2.700rem;
+        font-size: 0.9em;
+    }
+    
+    .inputscontainer .label {
+        font-weight: 600;
+        margin-left: 0px;
+        display: flex;
+        padding-bottom: 10px;
+        font-size: 14px;
+        color: #5c575cec;
+    }
+    
+    .inputscontainer .input {
+        padding-left: 10px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        box-sizing: border-box;
+    }
+    
+    .inputscontainer .input:hover {
+        border: 2px solid var(--button-bg);
+    }
+    
+    .btn {
+        width: 60%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--button-bg);
+        cursor: pointer;
+    }
+    
+    .regresar {
+        font-weight: 500;
+        margin-left: -200px;
+        display: flex;
+        padding-top: 20px;
+        font-size: 16px;
+        color: #242424ec;
+    }
+    
+}
