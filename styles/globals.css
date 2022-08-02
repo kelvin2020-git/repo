@@ -324,7 +324,188 @@ clase para centrar todas las tabla
   border: 1px solid rgba(0, 0, 0, .125);
   border-radius: 0.25rem;
 }
+@media (max-width: 410px) { 
 
+  .cardexistencia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    margin-left:-120px;
+  }
+  
+  .carddd {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin-left:-100px;
+    word-wrap: break-word;
+  width: 100px!important;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+  }
+
+  .contenedorcard {
+    position: relative;
+    width: 50%;
+    float: right;
+   
+    bottom: 0;
+  }
+  .carddd .text-white{
+ 
+    word-wrap: break-word;
+
+  }
+  
+  .contenedorcard .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: white;
+  }
+  
+  
+  
+  
+  .contenedorcard .container a {
+    position: relative;
+  
+  
+  }
+  
+  .contenedorcard  .container p {
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    color: #FFF;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .textpanel {
+    font-size: 11px!important;
+    font-weight: 200;
+    margin-top: 30px;
+    margin-left:-120px
+  }
+  .titulopanel {
+    font-size: 11px!important;
+    font-weight: 600;
+    padding: 50px;
+    margin-left: -30px!important;
+    margin-top: -80px;
+  }
+  
+.card-footer{
+  margin-left: 30px!important;
+  font-size: 8px!important;
+  font-weight: 500;
+  border-color:transparent;
+}
+.text-white{
+  background-color: #0397d6;
+}
+.card-text{
+  margin-left: 20px!important;
+  font-size: 7px!important;
+  font-weight: 500;
+}
+}
+@media (max-width: 520px) { 
+
+  .cardexistencia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    margin-left:-150px;
+  }
+  
+  .carddd {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin-left:-100px;
+    word-wrap: break-word;
+  width: 100px!important;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+  }
+
+  .contenedorcard {
+    position: relative;
+    width: 50%;
+    float: right;
+   
+    bottom: 0;
+  }
+  .carddd .text-white{
+ 
+    word-wrap: break-word;
+
+  }
+  
+  .contenedorcard .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: white;
+  }
+  
+  
+  
+  
+  .contenedorcard .container a {
+    position: relative;
+  
+  
+  }
+  
+  .contenedorcard  .container p {
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    color: #FFF;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .textpanel {
+    font-size: 11px!important;
+    font-weight: 200;
+    margin-top: 30px;
+    margin-left:-120px
+  }
+  .titulopanel {
+    font-size: 13px!important;
+    font-weight: 600;
+    padding: 50px;
+    margin-left: -30px!important;
+    margin-top: -80px;
+  }
+  
+.card-footer{
+  margin-left: 30px!important;
+  font-size: 8px!important;
+  font-weight: 500;
+  border-color:transparent;
+}
+.text-white{
+  background-color: #0397d6;
+}
+.card-text{
+  margin-left: 20px!important;
+  font-size: 7px!important;
+  font-weight: 500;
+}
+}
 /*
 
 
