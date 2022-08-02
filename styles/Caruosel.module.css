@@ -16,3 +16,81 @@
 .carouselwrapper {
     width: 100%;
 }
+
+
+
+
+@media (max-width: 410px) { 
+
+    .contenedor {
+        margin-top: 0px;
+        width: 100%;
+        margin-left: -0px;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+    .controlswrapper {
+        width: 100%;
+    }
+    
+    .carouselwrapper {
+        width: 100%;
+    }
+    
+
+    
+    
+    
+  }
+  @media (max-width: 520px) { 
+
+    .contenedor {
+        margin-top: 0px;
+        width: 100%;
+        margin-left: 0px;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+    .controlswrapper {
+        width: 100%;
+    }
+    
+    .carouselwrapper {
+        width: 100%;
+    }
+    
+    
+}
+@media (max-width: 360px) { 
+
+    .contenedor {
+        margin-top: 0px;
+        width: 100%;
+        margin-left: 0px;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+    .controlswrapper {
+        width: 100%;
+    }
+    
+    .carouselwrapper {
+        width: 100%;
+    }
+    
+    
+    
+    
+}

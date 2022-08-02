@@ -319,7 +319,7 @@ margin-left: 20px;
         font-weight: 600;
         width: 50px;
         padding: 40px;
-        margin-left: 90px;
+        margin-left: 70px;
         font-size: 35px;
         color: rgb(22, 22, 22);
         text-align: center;
@@ -366,14 +366,14 @@ margin-left: 20px;
     }
     .contactogridtitulocontenido {
         font-size: 17px;
-        margin-left: 140px;
+        margin-left: 180px;
         margin-top: 0px;
         font-family: sans-serif;
         font-weight: bold;
     }
     .contactocontenido {
-        font-size: 15px;
-        margin-left: 160px;
+        font-size: 11px;
+        margin-left: 180px;
         margin-top: 20px;
         line-height: 1.5em;
         font-family: sans-serif;
@@ -381,15 +381,15 @@ margin-left: 20px;
     }
     .contactonumero {
         font-size: 10px;
-        margin-left: 160px;
+        margin-left: 180px;
         margin-top: 10px;
         font-family: sans-serif;
         font-weight: bold;
     }
     .barraseparadorinferior {
-        width: 70px;
-        height: 10px;
-        margin-left: 160px;
+        width: 50px;
+        height: 7px;
+        margin-left: 180px;
         margin-top: 0px;
         justify-content: center;
         background-color: rgb(222, 111, 26);
@@ -455,9 +455,9 @@ margin-left: 20px;
         margin-left: 180px;
     }
     .imagen {
-        width: 340px;
+        width: 300px;
         height: 200px;
-      margin-left: 30px
+      margin-left:20px
       
       };
        
