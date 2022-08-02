@@ -15,7 +15,7 @@ export default function Nosotro() {
             </div>
           </div>
 
-          <div>
+          <div className={styles.imagen}>
             <Image
               src={nosotros}
               alt={nosotros}

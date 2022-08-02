@@ -14,7 +14,6 @@
     color: rgb(22, 22, 22);
     text-align: center;
 }
-
 .barraseparador {
     width: 120px;
     height: 10px;
@@ -23,13 +22,9 @@
     justify-content: center;
     background-color: rgb(222, 111, 26);
 }
-
 .container {
     justify-content: center;
 }
-
-
-
 
 .card {
     width: 1000px;
@@ -38,7 +33,6 @@
     margin-left: 150px;
     background-color: #f5f5f5;
 }
-
 .cardimagen {
     float: left;
     width: 460px;
@@ -47,8 +41,6 @@
     background: #f5f5f5;
     padding-bottom: 10px;
 }
-
-
 
 .btnloadmore {
     padding: 10px 10px!important;
@@ -63,12 +55,9 @@
     clear: both;
 }
 
-
-
 .imagen:hover {
     opacity: 0.3;
 }
-
 
 .cardimagen:hover .text {
     display: block;
@@ -85,7 +74,6 @@
     color: rgb(121, 117, 117) !important;
     padding: 10px;
 }
-
 .separador {
     width: 120px;
     height: 10px;
@@ -94,4 +82,286 @@
     margin-left: 600px;
     justify-content: center;
     background-color: rgb(222, 111, 26);
+}
+
+@media (max-width: 520px) { 
+
+    .proyectocontenedor {
+        background-color: rgb(236, 243, 244);
+        width: 100%;
+        height: 100%;
+        margin-top: -115px;
+    }
+    
+    .proyectotitulo {
+        font-weight: 600;
+        width: 50px;
+        padding: 30px;
+        margin-left: 120px;
+        font-size: 30px;
+        color: rgb(22, 22, 22);
+        text-align: center;
+    }
+    .barraseparador {
+        width: 120px;
+        height: 10px;
+        margin-top: -20px;
+        margin-bottom: 40px;
+        margin-left: 180px;
+        justify-content: center;
+        background-color: rgb(222, 111, 26);
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+      ;
+    }
+    
+    .card {
+        width: 330px;
+  
+        margin: 0 auto;
+        text-align: center;
+        margin-left: 80px;
+        background-color: #f5f5f5;
+    }
+    .cardimagen {
+        float: left;
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+        background: #f5f5f5;
+        padding-bottom: 5px;
+    }
+    
+    .btnloadmore {
+        padding: 2px 2px!important;
+        margin-left: 10px;
+     border-radius: 10%;
+     font-size: 8px;
+     border-color: rgba(194, 198, 202, 0.852);
+        cursor: pointer;
+    }
+    
+    .boton {
+        clear: both;
+    }
+    
+    .imagen:hover {
+        opacity: 0.3;
+    }
+    
+    .cardimagen:hover .text {
+        display: block;
+    }
+    
+    .text {
+        display: none;
+        overflow: hidden;
+        text-align: center;
+        margin-top: -100px;
+        outline: 0;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(121, 117, 117) !important;
+        padding: 10px;
+    }
+    .separador {
+        width: 50px;
+        height: 8px;
+        
+        margin-top: -10px;
+        margin-left: 185px;
+        justify-content: center;
+        background-color: rgb(222, 111, 26);
+    }   
+  
+}
+@media (max-width: 410px) { 
+
+    .proyectocontenedor {
+        background-color: rgb(236, 243, 244);
+        width: 100%;
+        height: 100%;
+        margin-top: -222px;
+    }
+    
+    .proyectotitulo {
+        font-weight: 500;
+        width: 50px;
+        padding: 30px;
+        margin-left: 90px;
+        font-size: 23px;
+        color: rgb(22, 22, 22);
+        text-align: center;
+    }
+    .barraseparador {
+        width: 60px;
+        height: 7px;
+        margin-top: -20px;
+        margin-bottom: 40px;
+        margin-left: 160px;
+        justify-content: center;
+        background-color: rgb(222, 111, 26);
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+      ;
+    }
+    
+    .card {
+        width: 280px;
+  
+        margin: 0 auto;
+        text-align: center;
+        margin-left: 80px;
+        background-color: #f5f5f5;
+    }
+    .cardimagen {
+        float: left;
+        width: 120px;
+        height: 150px;
+        margin: 5px;
+        background: #f5f5f5;
+        padding-bottom: 5px;
+    }
+    
+    .btnloadmore {
+        padding: 2px 2px!important;
+        margin-left: -200px;
+     border-radius: 10%;
+     font-size: 8px;
+     border-color: rgba(194, 198, 202, 0.852);
+        cursor: pointer;
+    }
+    
+    .boton {
+        clear: both;
+    }
+    
+    .imagen:hover {
+        opacity: 0.3;
+    }
+    
+    .cardimagen:hover .text {
+        display: block;
+    }
+    
+    .text {
+        display: none;
+        overflow: hidden;
+        text-align: center;
+        margin-top: -100px;
+        outline: 0;
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(121, 117, 117) !important;
+        padding: 10px;
+    }
+    .separador {
+        width: 50px;
+        height: 8px;
+        
+        margin-top: -10px;
+        margin-left: 170px;
+        justify-content: center;
+        background-color: rgb(222, 111, 26);
+    }   
+  
+}
+
+@media (max-width: 360px) { 
+
+    .proyectocontenedor {
+        background-color: rgb(236, 243, 244);
+        width: 100%;
+        height: 100%;
+        margin-top: -330px;
+    }
+    
+    .proyectotitulo {
+        font-weight: 600;
+        width: 50px;
+        padding: 30px;
+        margin-left: 60px;
+        font-size: 20px;
+        color: rgb(22, 22, 22);
+        text-align: center;
+    }
+    .barraseparador {
+        width: 60px;
+        height: 5px;
+        margin-top: -5px;
+        margin-bottom: 10px;
+        margin-left: 100px;
+        justify-content: center;
+        background-color: rgb(222, 111, 26);
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+      ;
+    }
+    
+    .card {
+        width: 250px;
+  
+        margin: 0 auto;
+        text-align: center;
+        margin-left: 40px;
+        background-color: #f5f5f5;
+    }
+    .cardimagen {
+        float: left;
+        width: 100px;
+        height: 150px;
+        margin: 5px;
+        background: #f5f5f5;
+        padding-bottom: 5px;
+    }
+    
+    .btnloadmore {
+        padding: 2px 2px!important;
+        margin-left: -30px;
+     border-radius: 10%;
+     border-top: 0px;
+     font-size: 8px;
+     border-color: rgba(194, 198, 202, 0.852);
+        cursor: pointer;
+    }
+    
+    .boton {
+        clear: both;
+    }
+    
+    .imagen:hover {
+        opacity: 0.3;
+    }
+    
+    .cardimagen:hover .text {
+        display: block;
+    }
+    
+    .text {
+        display: none;
+        overflow: hidden;
+        text-align: center;
+        margin-top: -70px;
+        outline: 0;
+        font-size: 11px;
+        font-weight: bold;
+        color: rgb(121, 117, 117) !important;
+        padding: 10px;
+    }
+    .separador {
+        width: 50px;
+        height: 8px;
+        
+        margin-top: -10px;
+        margin-left: 140px;
+        justify-content: center;
+        background-color: rgb(222, 111, 26);
+    }   
+  
 }
