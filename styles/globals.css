@@ -869,10 +869,54 @@ clase para paginaciones de las tablas
   font-size: 16px;
 }
 
+/* estilos para los mensaje de error de los modales*/
 .mensajeError {
   color: #d23200;
   font-size: 14px;
 }
+
+
+
+/* estilos y media queries para los mensaje de error del formulario contacto*/
+.mensajError {
+  color: #d23200;
+  font-size: 14px;
+}
+@media (max-width: 410px) { 
+
+  .mensajError {
+    color: #d23200;
+    font-size: 14px;
+    margin-left: 180px;
+  }
+
+  
+  
+  
+}
+@media (max-width: 520px) { 
+
+  .mensajError {
+    color: #d23200;
+    font-size: 14px;
+    margin-left: 80px;
+  }
+}
+@media (max-width: 360px) { 
+
+  .mensajError {
+    color: #d23200;
+    font-size: 14px;
+    margin-left: 80px;
+  }
+  
+
+  
+  
+  
+}
+
+
 
 /*vista de panel de usuario*/
 .cabecera {
