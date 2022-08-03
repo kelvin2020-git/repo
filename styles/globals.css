@@ -239,10 +239,13 @@ estilos vista panel administrador
 
 .contenedorcard {
   position: relative;
-  width: 80%;
+  width: 100%;
   float: right;
-  height: 100vh;
+  height: 780px;
   bottom: 0;
+
+  margin-top:100px;
+z-index: 0;
 }
 
 
@@ -280,22 +283,33 @@ clase para centrar todas las tabla
 */
 .app-contenedor {
   position: relative;
-  width: 80%;
+  width: 100%;
   float: right;
-  height: 880px;
+  height: 780px;
   bottom: 0;
+  margin-top:100px;
+  margin-left:-30px;
 }
 
 
 .app-contenedor .container {
   margin-top: 0px;
+  
   align-items: center;
   justify-content: center;
   height: 100%;
   background-color: white;
+ 
 }
 
-
+.capa2{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(143, 140, 140, 0.6);
+  z-index: 0;
+  top: 0;left: 0;
+}
 
 .tablacontenedor {
   margin-top: 140px;
@@ -303,6 +317,7 @@ clase para centrar todas las tabla
   justify-content: center;
   height: 100%;
   background-color: white;
+ 
 }
 
 
@@ -735,7 +750,7 @@ clase para paginaciones de las tablas
   font-size: 14px;
 }
 
-/*###################*/
+/*vista de panel de usuario*/
 .cabecera {
   font-size: 0.65em;
   height: 70px;
@@ -837,3 +852,188 @@ estilos para card del table
   background-color: #0397d6;
 }
 
+/* estilo para el menu*/
+.capa{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+  top: 0;left: 0;
+}
+/*Estilos para el encabezado*/
+.header{
+  background-color: rgba(100, 99, 99, 0.802);
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  position: fixed;
+  top: 0;left: 0;
+}
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+}
+.container .btn-menu, .logo{
+  float: left;
+  line-height:100px;
+}
+.container .btn-menu label{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+.logo h1{
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  margin-left: 20px;
+margin-top: 0px;
+}
+.container .menu{
+  float: right;
+  line-height: 100px;
+}
+.container .menu a{
+  display: inline-block;
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+#btn-menu{
+  display: none;
+}
+.container-menu{
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  top: 0;left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+
+}
+#btn-menu:checked ~ .container-menu{
+  opacity: 1;
+  visibility: visible;
+}
+.cont-menu{
+  width: 100%;
+  max-width: 250px;
+  background: #1c1c1c;
+  height: 100vh;
+margin-top:-20px;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+  transform: translateX(0%);
+}
+.cont-menu nav{
+  transform: translateY(15%);
+}
+.cont-menu nav ul li a{
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: gray;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+  border-left: 5px solid #c7c7c7;
+  color: white; 
+}
+.cont-menu label{
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+
+.cont-menu nav .active a {
+  color: white;
+  text-align: left;
+}
+
+.cont-menu nav :not(.active)::after {
+  opacity: 0.2;
+}
+
+.cont-menu nav :not(.active):hover a {
+  color: rgba(#FFF, 0.75);
+  text-decoration: none;
+}
+
+.cont-menu nav ::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.2em;
+  background: black;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #2e81ee, #b74e91)
+}
+.sidetext {
+
+  text-transform: uppercase;
+  text-decoration: none;
+Font-size:12px;
+  color: rgba(255, 255, 255, 0.35);
+  display: block;
+  transition: all ease-out 300ms;
+}
+
+.sidetext:hover {
+  color: white;
+}
+.cont-menu nav ul {
+  list-style: none;
+}
+
+.cont-menu nav li {
+  position: relative;
+  margin: 3.2em 0;
+}
+.titulo {
+  line-height: 1.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.4em;
+  color: white;
+  display: block;
+  margin-left: 50px!important;
+  margin-top: 0px!important;
+  transition: all ease-out 300ms;
+}
+
+.sidebarlogo {
+  position: relative;
+
+
+}
+.sidebarlog {
+
+  margin-left: 50px!important;
+  margin-top: 20px!important;
+}

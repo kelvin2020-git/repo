@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Sidebar from "./adminview/sidebar";
-import Header from "./adminview/header";
+import Menu from './adminview/menu';
 import logo from '../../public/administrador.png'
 import Image from 'next/image';
 import { onSnapshot, collection } from 'firebase/firestore';
 import { db } from "../firebase/firebase-config";
 import { useRouter } from "next/router";
+
 const AdminView = () => {
   const { push } = useRouter();
   const [usuario, setUsuarios] = useState([]);
@@ -58,9 +58,8 @@ const AdminView = () => {
 
   return (
 
-    <>
-      <Header  />
-      <Sidebar  />
+    <>	<div class="capa2"></div>
+         <Menu/>
       <section className="contenedorcard">
         <div className="container">
           <span className="titulopanel">Dashboard-Panel Administrativo</span>

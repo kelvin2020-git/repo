@@ -7,9 +7,9 @@ import { db} from "../firebase/firebase-config";
 import {  getDocs, collection } from 'firebase/firestore'
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
-  { width: 360, itemsToShow: 3, itemsToScroll: 2 },
+  { width: 360, itemsToShow: 2, itemsToScroll: 2 },
   { width: 520, itemsToShow: 3 },
-  { width: 410, itemsToShow: 3 },
+  { width: 410, itemsToShow: 2 },
   { width: 1200, itemsToShow: 3 }
 ];
 export default function Caruseles() {

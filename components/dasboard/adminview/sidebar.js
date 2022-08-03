@@ -22,6 +22,7 @@ const Sidebar = () => {
   return (
     <main className="main">
       <aside className={styles.sidebar}>
+        
         <div className={styles.sidebarlogo}>
 
           <Image

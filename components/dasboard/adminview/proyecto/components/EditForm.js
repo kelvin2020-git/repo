@@ -127,7 +127,7 @@ const EditForm = ({ theproyecto, onClose }) => {
           {...register("categoria", {
             required: {
               value: true,
-              message: "El campo es requerido"
+              message: "El campo es requerido,debe de seleccionar una categoria"
             },
           })}
           onChange={(e) => setCategoria(e.target.value)}

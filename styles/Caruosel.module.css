@@ -1,3 +1,6 @@
+
+
+
 .contenedor {
     margin-top: 0px;
     width: 1263px;
@@ -26,21 +29,23 @@
     .contenedor {
         margin-top: 0px;
         width: 100%;
-        margin-left: 30px;
+        margin-left: 0px;
         font-family: sans-serif;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background-color: rgb(222, 121, 26);
     }
-    
+  
     
     .controlswrapper {
         width: 100%;
     }
     
     .carouselwrapper {
-        width: 100%;
-        margin-left: 50px;
+        background-color: rgb(46, 222, 26);
+        width: 360px!important;
+        margin-left: 40px!important;
     }
     
     

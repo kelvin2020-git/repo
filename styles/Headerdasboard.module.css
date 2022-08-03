@@ -11,6 +11,11 @@
          align-items: center;
          z-index: 900
      }
+     .btnmenu{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
 /* CLASES PARA LA CABECERA DE PROYECTOS, CATEGORIA Y USUARIO*/
      .cabecera2 {
         font-size: 0.65em;
