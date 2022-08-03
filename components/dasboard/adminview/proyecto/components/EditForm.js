@@ -12,7 +12,7 @@ const EditForm = ({ theproyecto, onClose }) => {
   const id = theproyecto.id;
   const fotoo = theproyecto.foto;
   const [nombre, setNombre] = useState(theproyecto.nombre);
-  const [descripcion, setDescripcion] = useState(theproyecto.descripcion);
+
   const [categoria, setCategoria] = useState(theproyecto.categoria);
   const [foto] = useState(theproyecto.foto);
   const [file, setFile] = useState(fotoo)
@@ -94,28 +94,7 @@ const EditForm = ({ theproyecto, onClose }) => {
         />
         {errors.nombre && <span className={errors.nombre && "mensajeError"}>{errors.nombre.message}</span>}
       </Form.Group>
-      <Form.Group>
-        <label className="text-input-formulario"><span>Descripción</span></label>
-        <Form.Control
-          as="textarea"
-          placeholder="Descripción"
-          rows={3}
-          name="descripcion"
-          value={descripcion}
-          {...register("descripcion", {
-            required: {
-              value: true,
-              message: "El campo es requerido"
-            },
-            minLength: {
-              value: 6,
-              message: "la descripcion debe tener al menos 6 caracteres"
-            }
-          })}
-          onChange={(e) => setDescripcion(e.target.value)}
-        />
-        {errors.descripcion && <span className={errors.descripcion && "mensajeError"}>{errors.descripcion.message}</span>}
-      </Form.Group>
+  
       <Form.Group>
         <label className="text-input-formulario"><span>Categoría</span></label>
         <Form.Control

@@ -45,7 +45,7 @@ const Category = ({categoria}) => {
             <td>{categoria.nombre}</td>
             
             <td>{moment(categoria.fecha).format('MMMM Do YYYY, h:mm:ss a')} </td>
-            <td>{moment(categoria.modificacion).format('MMMM Do YYYY, h:mm:ss a')} </td>
+          
             <td  className="btntext" >
                 <OverlayTrigger
                     overlay={

@@ -90,26 +90,7 @@ const AddForm = ({ onClose }) => {
         />
         {errors.nombre && <span className={errors.nombre && "mensajeError"}>{errors.nombre.message}</span>}
       </Form.Group>
-      <Form.Group>
-        <label className="text-input-formulario"><span>Descripción</span></label>
-        <Form.Control
-          as="textarea"
-          placeholder="Descripción"
-          rows={3}
-          {...register("descripcion", {
-            required: {
-              value: true,
-              message: "El campo es requerido"
-            },
-            minLength: {
-              value: 6,
-              message: "la descripcion debe tener al menos 6 caracteres"
-            }
-          })}
-
-        />
-        {errors.descripcion && <span className={errors.descripcion && "mensajeError"}>{errors.descripcion.message}</span>}
-      </Form.Group>
+  
       <Form.Group>
         <label className="text-input-formulario"><span>Categoría</span></label>
         <Form.Control
