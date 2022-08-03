@@ -377,7 +377,7 @@ font-weight: 800;
 }
 
 
-@media (max-width: 410px) { 
+@media (max-width: 420px) { 
   .textpanel {
     font-size: 15px!important;
     font-weight: 800;
@@ -523,17 +523,17 @@ margin-top: 0px!important;
 .container .menu{
   float: right;
   line-height: 100px;
-  margin-top: -90px!important;
+  margin-top: -110px!important;
 }
 .container .menu a{
   display: inline-block;
-  padding: 15px;
+  padding: 10px!important;
   line-height: normal;
   text-decoration: none;
   color: #fff;
   transition: all 0.3s ease;
   border-bottom: 2px solid transparent;
-  font-size: 14px;
+  font-size: 13px!important;
   margin-right: 5px;
  
 }
@@ -546,7 +546,36 @@ margin-top: 0px!important;
   font-size: 25px;
   cursor: pointer;
 }
+.container .menu2{
+  float: right;
+  line-height: 100px;
+  margin-top: -70px!important;
+}
+.container .menu2 a{
 
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 14px!important;
+  margin-right: 0px!important;
+ 
+}
+.container .btn-menu, .logo2{
+  float: left;
+  line-height:100px;
+}
+.container .menu2 a{
+  
+
+  cursor: pointer!important;
+}
+.container .btn-menu label{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
 .container-menu{
   position: absolute;
   background: rgba(0,0,0,0.5);
@@ -1077,11 +1106,35 @@ estilos para  la vista usuario
   margin-left: 20px;
 margin-top: 0px!important;
 }
-.container .menu{
+
+
+.container .btn-menu label{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+
+
+/*clase para el boton home del proyecto categoria usuario */
+.logo2 h1{
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  margin-left: 20px;
+margin-top: 40px!important;
+}
+.container .btn-menu, .logo2{
+  float: left;
+  line-height:100px;
+}
+
+.container .menu2{
   float: right;
   line-height: 100px;
 }
-.container .menu a{
+.container .menu2 a{
   display: inline-block;
   padding: 15px;
   line-height: normal;
@@ -1092,23 +1145,6 @@ margin-top: 0px!important;
   font-size: 15px;
   margin-right: 5px;
 }
-.container .btn-menu, .logo2{
-  float: left;
-  line-height:100px;
-}
-.container .btn-menu label{
-  color: #fff;
-  font-size: 25px;
-  cursor: pointer;
-}
-/*clase para el boton home del proyecto categoria usuario */
-.logo2 h1{
-  color: #fff;
-  font-weight: 400;
-  font-size: 22px;
-  margin-left: 20px;
-margin-top: 40px!important;
-}
 
 
 
@@ -1124,12 +1160,146 @@ margin-top: 40px!important;
 
 
 
+@media (max-width: 520px) { 
+  .container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+  
+  }
+  
+    
+    
+  }
+  
 
-
-
-
-
-
+  @media (max-width: 420px) { 
+    .container-menu{
+      position: absolute;
+      background: rgba(0,0,0,0.5)!important;
+      width: 100%;
+      height: 900px!important;
+      z-index: 999;
+      top: 0;left: 0;
+      transition: all 500ms ease;
+      opacity: 0;
+      visibility: hidden;
+    
+    }
+    
+    #btn-menu:checked ~ .container-menu{
+      opacity: 1;
+      visibility: visible;
+    }
+    .cont-menu{
+      width: 100%;
+      max-width: 250px;
+      background: #1c1c1c;
+      height: 900px!important;
+    margin-top:-20px;
+      position: relative;
+      transition: all 500ms ease;
+      transform: translateX(-100%);
+    }
+    #btn-menu:checked ~ .container-menu .cont-menu{
+      transform: translateX(0%);
+    }
+    .cont-menu nav{
+      transform: translateY(15%);
+    }
+    .cont-menu nav ul li a{
+      display: block;
+      text-decoration: none;
+      padding: 20px;
+      color: gray;
+      border-left: 5px solid transparent;
+      transition: all 400ms ease;
+    }
+    .cont-menu nav a:hover{
+      border-left: 5px solid #c7c7c7;
+      color: white; 
+    }
+    .cont-menu label{
+      position: absolute;
+      right: 5px;
+      top: 10px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    
+    .cont-menu nav .active a {
+      color: white;
+      text-align: left;
+    }
+    
+    .cont-menu nav :not(.active)::after {
+      opacity: 0.2;
+    }
+    
+    .cont-menu nav :not(.active):hover a {
+      color: rgba(#FFF, 0.75);
+      text-decoration: none;
+    }
+    
+    .cont-menu nav ::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 0.2em;
+      background: black;
+      left: 0;
+      bottom: 0;
+      background-image: linear-gradient(to right, #2e81ee, #b74e91)
+    }
+    .sidetext {
+      text-transform: uppercase;
+      text-decoration: none;
+    Font-size:12px;
+      color: rgba(255, 255, 255, 0.35);
+      display: block;
+      transition: all ease-out 300ms;
+    }
+    
+    .sidetext:hover {
+      color: white;
+    }
+    .cont-menu nav ul {
+      list-style: none;
+    }
+    
+    .cont-menu nav li {
+      position: relative;
+      margin: 3.2em 0;
+    }
+    .titulo {
+      line-height: 1.3em;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.4em;
+      color: white;
+      display: block;
+      margin-left: 50px!important;
+      margin-top: 0px!important;
+      transition: all ease-out 300ms;
+    }
+    
+    .sidebarlogo {
+      position: relative;
+    }
+    .sidebarlog {
+      margin-left: 50px!important;
+      margin-top: 20px!important;
+    }
+      
+    }
+    
 
 
 

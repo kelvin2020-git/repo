@@ -415,7 +415,7 @@ margin-left: 20px;
         
         margin-top: 140px;
         justify-content: center;
-margin-left: -340px;
+margin-left: -360px;
     }
     .formulario div {
         display: flex;
@@ -426,7 +426,7 @@ margin-left: -340px;
     .formulario label {
         word-break: break-word;
         display: inline-block;
-        margin-left: 10px;
+        margin-left: -20px;
         font-family: 'Times New Roman', Times, serif;
         padding: 10px;
         font-size: 15px;
@@ -438,7 +438,7 @@ margin-left: -340px;
         background-color: rgb(216, 250, 250);
         box-sizing: border-box;
         border: 1px solid rgb(15, 1, 1);
-        margin-left: 0px;
+        margin-left: -20px;
     }
     .formulariobutton {
         background-color: black;
@@ -474,7 +474,7 @@ margin-left: -340px;
         background-color: rgb(216, 250, 250);
         resize: none;
         width: 350px!important;
-        margin-left: 0px;
+        margin-left: -20px;
     }
     .imagen {
        

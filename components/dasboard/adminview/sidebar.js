@@ -44,7 +44,7 @@ const Sidebar = () => {
 			<div className="logo2">
 				<h1 onClick={home}>Home</h1>
 			</div>
-			<nav className="menu">
+			<nav className="menu2">
 				<a >Usuario : {user} </a>
 				
 				<a onClick={logout}> Cerrar Sesión</a>
