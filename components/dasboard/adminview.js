@@ -58,7 +58,7 @@ const AdminView = () => {
 
   return (
 
-    <>	<div class="capa2"></div>
+    <>	<div className="capa2"></div>
          <Menu/>
       <section className="contenedorcard">
         <div className="container">

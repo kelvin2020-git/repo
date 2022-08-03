@@ -38,28 +38,28 @@ const Menu = () => {
 <>
 
 <body>
-	<header class="header">
-		<div class="container">
-		<div class="btn-menu">
+	<header className="header">
+		<div className="container">
+		<div className="btn-menu">
 			<label for="btn-menu">☰</label>
 		</div>
-			<div class="logo">
+			<div className="logo">
 				<h1 onClick={home}>Home</h1>
 			</div>
-			<nav class="menu">
+			<nav className="menu">
 				<a >Usuario : {user} </a>
 				
 				<a onClick={logout}> Cerrar Sesión</a>
 			</nav>
 		</div>
 	</header>
-	<div class="capa"></div>
+	<div className="capa"></div>
 
 <input type="checkbox" id="btn-menu"></input>
-<div class="container-menu">
+<div className="container-menu">
 
 
-	<div class="cont-menu">
+	<div className="cont-menu">
     <div     className="sidebarlog">
 
     <Image
