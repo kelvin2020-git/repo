@@ -1,8 +1,8 @@
      .cabecera {
          font-size: 0.65em;
-         left: 256px;
+      
          height: 70px;
-         width: 1110px;
+         width: 100%;
          overflow: hidden;
          background-color: rgba(100, 99, 99, 0.802);
          position: fixed;

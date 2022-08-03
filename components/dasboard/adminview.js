@@ -88,11 +88,13 @@ const AdminView = () => {
               <div className="card-footer" style={{ marginLeft: '100px' }} onClick={goUsuario}> Ver mas</div>
             </div>
           </div>
+          <div className="imagenpanel">
           <Image
             src={logo}
             alt="logo"
             width="220px"
             height="220px" />
+            </div>
           <span className="textpanel">Bienvenido Al Panel Administrativo</span>
         </div>
       </section>

@@ -10,7 +10,7 @@ const Categoriavista = () => {
 
     <>
       	<div className="capa2"></div>
-    <Menu/>
+    <Sidebar/>
       <section className="app-contenedor">
               <div className="container">
                 <App />
