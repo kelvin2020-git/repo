@@ -41,7 +41,7 @@ const Menu = () => {
 	<header className="header">
 		<div className="container">
 		<div className="btn-menu">
-			<label for="btn-menu">☰</label>
+			<label htmlFor="btn-menu">☰</label>
 		</div>
 			<div className="logo">
 				<h1 onClick={home}>Home</h1>
@@ -60,7 +60,7 @@ const Menu = () => {
 
 
 	<div className="cont-menu">
-    <div     className="sidebarlog">
+    <div className="sidebarlog">
 
     <Image
             onClick={dashboard}
@@ -83,7 +83,7 @@ const Menu = () => {
         <li className="sidetext"><a onClick={dashboard}>panel</a></li>
             </ul>
 		</nav>
-		<label for="btn-menu">✖️</label>
+		<label htmlFor="btn-menu">✖️</label>
 	</div>
 </div>
 </body>

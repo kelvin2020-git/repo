@@ -8,7 +8,7 @@ const Proyectovista = () => {
 
   return (
 
-    <>	<div class="capa2"></div>
+    <>	<div className="capa2"></div>
        <Menu/>
       <section className="app-contenedor">
               <div className="container">
