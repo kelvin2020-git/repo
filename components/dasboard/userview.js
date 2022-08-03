@@ -15,6 +15,9 @@ function UserView() {
     push("/");
     console.log("logout");
   };
+  const home = () => {
+    push("/")
+  };
   return <>
      <div className={styles.cabecera}>
        <button className={styles.btnhome} onClick={home}> HOME</button>
