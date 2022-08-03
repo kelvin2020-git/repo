@@ -1,6 +1,5 @@
      .cabecera {
          font-size: 0.65em;
-      
          height: 70px;
          width: 100%;
          overflow: hidden;
@@ -129,7 +128,14 @@
             background-color: #2296ee;
             margin-left: 10px;
         }
-        
+        .btnlogout:hover {
+            color: rgb(12, 11, 11);
+            background-color: #ee2233;
+        }
+        .btnhome:hover {
+           color: white;
+           background-color: #b3b3b3bb;
+       }
         
     }
     @media (max-width: 420px) { 
@@ -137,15 +143,15 @@
         .btnlogout {
             border-color: #d3181e;
             color: white;
-            border-radius: 3px;
-            padding: 2px;
-            margin-bottom: 10px;
+            border-radius: 6px;
+            padding: 5px;
+            margin-bottom: 0px;
             border: 2px solid #7a7e7a;
             background-color: #ee2233;
-            margin-left: 100px;
+            margin-left: 60px!important;
         }
         .headertext {
-            margin-left: -10px;
+       
             font-size: 7px;
             text-decoration: none;
            margin-left:-60px;
@@ -162,7 +168,7 @@
         .cabecera {
             font-size: 0.45em;
             left: 0px;
-            height: 50px;
+            height: 70px;
             width: 100%;
             overflow: hidden;
             background-color: rgba(100, 99, 99, 0.802);
@@ -175,14 +181,21 @@
         .btnhome {
             border-color: #3ba2f1;
             color: white;
-            border-radius: 3px;
-            padding: 2px;
+            border-radius: 5px;
+            padding: 4px;
             margin-bottom: 10px;
             border: 1px solid #7a7e7a;
             background-color: #2296ee;
-            margin-left: 10px;
+            margin-left: 20px;
         }
-        
+        .btnlogout:hover {
+            color: rgb(12, 11, 11);
+            background-color: #ee2233;
+        }
+        .btnhome:hover {
+           color: white;
+           background-color: #b3b3b3bb;
+       }
         
     }
     @media (max-width: 520px) { 
@@ -237,6 +250,13 @@
             background-color: #2296ee;
             margin-left: 10px;
         }
-        
+        .btnlogout:hover {
+            color: rgb(12, 11, 11);
+            background-color: #ee2233;
+        }
+        .btnhome:hover {
+           color: white;
+           background-color: #b3b3b3bb;
+       }
         
     }

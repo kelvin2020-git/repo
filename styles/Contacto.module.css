@@ -143,7 +143,62 @@
     height: 300px;
   margin-left: 160px
   };
-.formulario textarea {
+
+  .inputscontainer {
+    height: 55%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputscontainer .input,
+.btn {
+    width: 290px;
+    height: 2.700rem;
+    font-size: 0.9em;
+}
+
+.inputscontainer .label {
+    font-weight: 600;
+    margin-left: 0px;
+    display: flex;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #5c575cec;
+}
+
+.inputscontainer .input {
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+.inputscontainer .input:hover {
+    border: 2px solid var(--button-bg);
+}
+
+.btn {
+    width: 80%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg);
+    cursor: pointer;
+}
+.inputscontainer .textarea {
+    background-color: rgb(216, 250, 250);
+    resize: none;
+
+}
+
+.formulario .textarea {
     background-color: rgb(216, 250, 250);
     resize: none;
 
@@ -305,6 +360,78 @@ margin-left: 20px;
       margin-left: 60px
       
       };
+
+
+
+
+
+
+      .inputscontainer div {
+        display: flex;
+        margin-top: 60px;
+        flex-direction: column;
+    
+    }
+
+      .inputscontainer {
+        height: 40%;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 150px;
+        margin-top: 150px;
+    }
+    
+    .inputscontainer .input,.label,.textarea,
+    .btn {
+  
+        width: 200px;
+        height: 2.000rem;
+        font-size: 0.2em;
+        margin-left: 250px;
+    }
+    
+    .inputscontainer .label {
+        font-weight: 600;
+        margin-left: 250px;
+        display: flex;
+        padding-bottom: 10px;
+        font-size: 14px;
+        color: #5c575cec;
+    }
+    
+    .inputscontainer .input {
+        padding-left: 10px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        box-sizing: border-box;
+        
+        background-color: rgb(216, 250, 250);
+    }
+    
+    .inputscontainer .input:hover {
+        border: 2px solid var(--button-bg);
+    }
+    
+    .btn {
+        width: 50%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--button-bg);
+        cursor: pointer;
+    }
+    .inputscontainer .textarea {
+        background-color: rgb(216, 250, 250);
+        resize: none;
+    
+    }
        
 }
 @media (max-width: 410px) { 
@@ -469,5 +596,75 @@ margin-left: 20px;
       margin-left:40px
       
       };
-       
+
+
+
+
+
+      .inputscontainer div {
+        display: flex;
+        margin-top: 60px;
+        flex-direction: column;
+    
+    }
+
+      .inputscontainer {
+        height: 40%;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 150px;
+        margin-top: 150px;
+    }
+    
+    .inputscontainer .input,.label,.textarea,
+    .btn {
+  
+        width: 200px;
+        height: 2.000rem;
+        font-size: 0.2em;
+        margin-left: 250px;
+    }
+    
+    .inputscontainer .label {
+        font-weight: 600;
+        margin-left: 250px;
+        display: flex;
+        padding-bottom: 10px;
+        font-size: 14px;
+        color: #5c575cec;
+    }
+    
+    .inputscontainer .input {
+        padding-left: 10px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        box-sizing: border-box;
+        
+        background-color: rgb(216, 250, 250);
+    }
+    
+    .inputscontainer .input:hover {
+        border: 2px solid var(--button-bg);
+    }
+    
+    .btn {
+        width: 50%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--button-bg);
+        cursor: pointer;
+    }
+    .inputscontainer .textarea {
+        background-color: rgb(216, 250, 250);
+        resize: none;
+    
+    }
 }

@@ -67,7 +67,7 @@ const AdminView = () => {
             <div className="carddd text-white " style={{ width: '18rem', backgroundColor: '#61BCEA', marginLeft: '10px' }}>
               <p className="card-text" style={{ marginLeft: '80px' }}>Productos</p>
               <div className="card-body">
-                <p className="card-text" style={{ marginLeft: '130px' }}>{proyectos}</p>
+                <p className="card-numero" style={{ marginLeft: '130px' }}>{proyectos}</p>
               </div>
               <div className="card-footer" style={{ marginLeft: '100px' }} onClick={goProyecto}> Ver mas</div>
             </div>
@@ -75,7 +75,7 @@ const AdminView = () => {
               <p className="card-text" style={{ marginLeft: '80px' }}>Categoría</p>
               <div className="card-body">
 
-                <p className="card-text" style={{ marginLeft: '130px' }}>{category}</p>
+                <p className="card-numero" style={{ marginLeft: '130px' }}>{category}</p>
               </div>
               <div className="card-footer" style={{ marginLeft: '100px' }} onClick={goCategoria}> Ver mas</div>
             </div>
@@ -83,7 +83,7 @@ const AdminView = () => {
               <p className="card-text" style={{ marginLeft: '80px' }}>Usuarios</p>
               <div className="card-body">
 
-                <p className="card-text" style={{ marginLeft: '130px' }}>{usuario}</p>
+                <p className="card-numero" style={{ marginLeft: '130px' }}>{usuario}</p>
               </div>
               <div className="card-footer" style={{ marginLeft: '100px' }} onClick={goUsuario}> Ver mas</div>
             </div>

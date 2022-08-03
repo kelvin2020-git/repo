@@ -291,6 +291,14 @@ clase para centrar todas las tabla
   margin-left:-30px;
 }
 
+.tablacontenedor {
+  margin-top: 200px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: white;
+
+}
 
 .app-contenedor .container {
   margin-top: 0px;
@@ -301,6 +309,12 @@ clase para centrar todas las tabla
   background-color: white;
  
 }
+/*
+
+
+clase para tabla administrador
+
+*/
 
 .capa2{
   position: fixed;
@@ -311,14 +325,6 @@ clase para centrar todas las tabla
   top: 0;left: 0;
 }
 
-.tablacontenedor {
-  margin-top: 200px;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  background-color: white;
-
-}
 
 
 .cardexistencia {
@@ -339,8 +345,51 @@ clase para centrar todas las tabla
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
-@media (max-width: 410px) { 
 
+.card-numero {
+  font-size: 30px!important;
+font-weight: 800;
+}
+
+/*estilos para card del apartado de admin*/
+.card-footer{
+  color: #121516;
+  font-size: 18px!important;
+  font-weight: 800;
+  border-color:transparent;
+  margin-top: -20px;
+}
+.text-white{
+  background-color: #0397d6;
+}
+/*panel letras*/
+.textpanel {
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 30px;
+}
+.titulopanel {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 50px;
+  margin-left: -550px;
+  margin-top: -80px;
+}
+
+
+@media (max-width: 410px) { 
+  .textpanel {
+    font-size: 15px!important;
+    font-weight: 800;
+    margin-top: 30px;
+  }
+  .titulopanel {
+    font-size: 15px!important;
+    font-weight: 600;
+    padding: 50px;
+    margin-left: -30px!important;
+    margin-top: -80px;
+  }
   .cardexistencia {
     display: flex;
     flex-direction: row;
@@ -412,37 +461,14 @@ clase para centrar todas las tabla
     font-weight: bold;
     margin-top: 20px;
   }
-  .textpanel {
-    font-size: 40px!important;
-    font-weight: 200;
-    margin-top: 30px;
-    margin-left:0px!important
-  }
-  .titulopanel {
-    font-size: 11px!important;
-    font-weight: 600;
-    padding: 50px;
-    margin-left: -30px!important;
-    margin-top: -80px;
-  }
+
+ 
   .imagenpanel{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
-.card-footer{
-  margin-left: 30px!important;
-  font-size: 8px!important;
-  font-weight: 500;
-  border-color:transparent;
-}
-.text-white{
-  background-color: #0397d6;
-}
-.card-text{
-  margin-left: 20px!important;
-  font-size: 7px!important;
-  font-weight: 500;
-}
+
+
 
 .app-contenedor {
   position: relative;
@@ -597,30 +623,36 @@ margin-top: 0px!important;
     margin-top: 20px;
   }
   .textpanel {
-    font-size: 11px!important;
-    font-weight: 200;
+    font-size: 15px!important;
+    font-weight: 800;
     margin-top: 30px;
-    margin-left:-120px
   }
   .titulopanel {
-    font-size: 13px!important;
+    font-size: 17px!important;
     font-weight: 600;
     padding: 50px;
     margin-left: -30px!important;
     margin-top: -80px;
   }
-  
+  .card-numero {
+    font-size: 12px!important;
+  font-weight: 800;
+  padding: 4px;
+  margin-left: 40px!important;
+  margin-top: 0px!important;
+  }
 .card-footer{
   margin-left: 30px!important;
-  font-size: 8px!important;
+  font-size: 10px!important;
   font-weight: 500;
+  margin-top: 2px!important;
   border-color:transparent;
 }
 .text-white{
   background-color: #0397d6;
 }
 .card-text{
-  margin-left: 70px!important;
+  margin-left: 10px!important;
   font-size: 10px!important;
   font-weight: 500;
 }
@@ -699,19 +731,7 @@ estilos para los botones de tablas y modales
 }
 
 
-/*panel letras*/
-.textpanel {
-  font-size: 30px;
-  font-weight: 800;
-  margin-top: 30px;
-}
-.titulopanel {
-  font-size: 25px;
-  font-weight: 600;
-  padding: 50px;
-  margin-left: -550px;
-  margin-top: -80px;
-}
+
 
 /*
 
@@ -925,7 +945,7 @@ estilos para  la vista usuario
   align-items: center;
   justify-content: center;
   height: 100%;
-  background-color: rgb(221, 42, 42);
+  background-color: white;
 }
 
 
@@ -944,16 +964,6 @@ estilos para  la vista usuario
   color: rgb(221, 42, 42);;
   font-weight: bold;
   margin-top: 20px;
-}
-
-
-
-/*estilos para card del apartado de admin*/
-.card-footer{
-  border-color:transparent;
-}
-.text-white{
-  background-color: #0397d6;
 }
 
 
