@@ -315,6 +315,516 @@ margin-left: 20px;
 
 
 */
+@media (max-width: 989px) { 
+
+    .contactocontenedor {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin-top: -31px;
+    }
+    
+    .contactotitulo {
+        font-weight: 600;
+        width: 50px;
+        padding: 40px;
+        margin-left: 330px;
+        font-size: 46px;
+   
+        color: rgb(22, 22, 22);
+        text-align: center;
+    }
+    
+    .barraseparador {
+        width: 120px;
+        height: 10px;
+        margin-bottom: 30px;
+        margin-top: -30px;
+        margin-left: 430px;
+        justify-content: center;
+        background-color: rgb(222, 111, 26);
+    }
+    
+    .contactogrid {
+        display: flex;
+      
+        margin-top: 30px;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+    }
+    
+    .contactogridcontenedor {
+        width: 100%;
+        margin-left: -40px;
+    
+    }
+    .contactogridtitulo {
+        font-size: 17px;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-left: 70px;
+    }
+    .contactogridcontenido {
+        font-family: "Abril Fatface";
+        margin-top: 13px;
+        font-weight: bolder;
+        line-height: 1.0em;
+        font-size: 13px;
+        width: 190px;
+       margin-left: 70px;
+    }
+    .contactogridtitulocontenido {
+        font-size: 17px;
+        margin-left: 400px;
+        margin-top: -100px;
+        width: 160px;
+       
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .contactocontenido {
+        font-size: 11px;
+        margin-left: 405px;
+        margin-top: 20px;
+        width: 160px;
+      
+        line-height: 1.4em;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .contactonumero {
+        font-size: 11px;
+        margin-left: 405px;
+        margin-top: 20px;
+        width: 160px;
+     
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .barraseparadorinferior {
+        width: 50px;
+        height: 7px;
+        margin-left: 405px;
+        margin-top: 10px;
+        justify-content: center;
+        background-color: rgb(222, 111, 26);
+    }
+    .formulario {
+        
+        margin-top: 140px;
+        justify-content: center;
+margin-left: -360px;
+    }
+    .formulario div {
+        display: flex;
+       
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .formulario label {
+        word-break: break-word;
+        display: inline-block;
+        margin-left: -460px;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px;
+        font-size: 15px;
+        font-style: oblique;
+    }
+    .formulario input {
+        width: 350px;
+        height: 30px;
+        background-color: rgb(216, 250, 250);
+        box-sizing: border-box;
+        border: 1px solid rgb(15, 1, 1);
+        margin-left: -460px;
+    }
+    .formulariobutton {
+        background-color: black;
+        /* Green */
+        border: none;
+        color: rgb(241, 126, 50);
+        padding: 5px 35px;
+        text-align: center;
+        text-decoration: none;
+      
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-left: -210px;
+    }
+    .formulariobutton:hover {
+        background-color: rgb(241, 126, 50);
+        border: none;
+        color: black;
+        padding: 5px 35px;
+      
+      
+        padding: 5px 35px;
+        text-align: center;
+        text-decoration: none;
+      
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-left: -210px;
+    }
+    .formulario textarea {
+        background-color: rgb(216, 250, 250);
+        resize: none;
+        width: 350px!important;
+        margin-left: -460px;
+    }
+    .imagen {
+       
+        width: 670px;
+        height: 200px;
+      margin-left:160px
+      
+      };
+       
+}
+@media (max-width: 920px) { 
+
+    .contactocontenedor {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin-top: -31px;
+    }
+    
+    .contactotitulo {
+        font-weight: 600;
+        width: 50px;
+        padding: 40px;
+        margin-left: 300px;
+        font-size: 46px;
+   
+        color: rgb(22, 22, 22);
+        text-align: center;
+    }
+    
+    .barraseparador {
+        width: 120px;
+        height: 10px;
+        margin-bottom: 30px;
+        margin-top: -30px;
+        margin-left: 400px;
+        justify-content: center;
+        background-color: rgb(222, 111, 26);
+    }
+    
+    .contactogrid {
+        display: flex;
+      
+        margin-top: 30px;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+    }
+    
+    .contactogridcontenedor {
+        width: 100%;
+        margin-left: -40px;
+    
+    }
+    .contactogridtitulo {
+        font-size: 17px;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-left: 70px;
+    }
+    .contactogridcontenido {
+        font-family: "Abril Fatface";
+        margin-top: 13px;
+        font-weight: bolder;
+        line-height: 1.0em;
+        font-size: 13px;
+        width: 190px;
+       margin-left: 70px;
+    }
+    .contactogridtitulocontenido {
+        font-size: 17px;
+        margin-left: 400px;
+        margin-top: -100px;
+        width: 160px;
+       
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .contactocontenido {
+        font-size: 11px;
+        margin-left: 405px;
+        margin-top: 20px;
+        width: 160px;
+      
+        line-height: 1.4em;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .contactonumero {
+        font-size: 11px;
+        margin-left: 405px;
+        margin-top: 20px;
+        width: 160px;
+     
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .barraseparadorinferior {
+        width: 50px;
+        height: 7px;
+        margin-left: 405px;
+        margin-top: 10px;
+        justify-content: center;
+        background-color: rgb(222, 111, 26);
+    }
+    .formulario {
+        
+        margin-top: 140px;
+        justify-content: center;
+margin-left: -360px;
+    }
+    .formulario div {
+        display: flex;
+       
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .formulario label {
+        word-break: break-word;
+        display: inline-block;
+        margin-left: -370px;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px;
+        font-size: 15px;
+        font-style: oblique;
+    }
+    .formulario input {
+        width: 350px;
+        height: 30px;
+        background-color: rgb(216, 250, 250);
+        box-sizing: border-box;
+        border: 1px solid rgb(15, 1, 1);
+        margin-left: -370px;
+    }
+    .formulariobutton {
+        background-color: black;
+        /* Green */
+        border: none;
+        color: rgb(241, 126, 50);
+        padding: 5px 35px;
+        text-align: center;
+        text-decoration: none;
+      
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-left: -160px;
+    }
+    .formulariobutton:hover {
+        background-color: rgb(241, 126, 50);
+        border: none;
+        color: black;
+        padding: 5px 35px;
+      
+      
+        padding: 5px 35px;
+        text-align: center;
+        text-decoration: none;
+      
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-left: -160px;
+    }
+    .formulario textarea {
+        background-color: rgb(216, 250, 250);
+        resize: none;
+        width: 350px!important;
+        margin-left: -370px;
+    }
+    .imagen {
+       
+        width: 600px;
+        height: 200px;
+      margin-left:160px
+      
+      };
+       
+}
+@media (max-width: 840px) { 
+
+    .contactocontenedor {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin-top: -31px;
+    }
+    
+    .contactotitulo {
+        font-weight: 600;
+        width: 50px;
+        padding: 40px;
+        margin-left: 260px;
+        font-size: 42px;
+   
+        color: rgb(22, 22, 22);
+        text-align: center;
+    }
+    
+    .barraseparador {
+        width: 120px;
+        height: 10px;
+        margin-bottom: 30px;
+        margin-top: -30px;
+        margin-left: 340px;
+        justify-content: center;
+        background-color: rgb(222, 111, 26);
+    }
+    
+    .contactogrid {
+        display: flex;
+      
+        margin-top: 30px;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+    }
+    
+    .contactogridcontenedor {
+        width: 100%;
+        margin-left: -40px;
+    
+    }
+    .contactogridtitulo {
+        font-size: 17px;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-left: 70px;
+    }
+    .contactogridcontenido {
+        font-family: "Abril Fatface";
+        margin-top: 13px;
+        font-weight: bolder;
+        line-height: 1.0em;
+        font-size: 13px;
+        width: 190px;
+       margin-left: 70px;
+    }
+    .contactogridtitulocontenido {
+        font-size: 17px;
+        margin-left: 400px;
+        margin-top: -100px;
+        width: 160px;
+       
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .contactocontenido {
+        font-size: 11px;
+        margin-left: 405px;
+        margin-top: 20px;
+        width: 160px;
+      
+        line-height: 1.4em;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .contactonumero {
+        font-size: 11px;
+        margin-left: 405px;
+        margin-top: 20px;
+        width: 160px;
+     
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .barraseparadorinferior {
+        width: 50px;
+        height: 7px;
+        margin-left: 405px;
+        margin-top: 10px;
+        justify-content: center;
+        background-color: rgb(222, 111, 26);
+    }
+    .formulario {
+        
+        margin-top: 140px;
+        justify-content: center;
+margin-left: -360px;
+    }
+    .formulario div {
+        display: flex;
+       
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .formulario label {
+        word-break: break-word;
+        display: inline-block;
+        margin-left: -330px;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px;
+        font-size: 15px;
+        font-style: oblique;
+    }
+    .formulario input {
+        width: 350px;
+        height: 30px;
+        background-color: rgb(216, 250, 250);
+        box-sizing: border-box;
+        border: 1px solid rgb(15, 1, 1);
+        margin-left: -330px;
+    }
+    .formulariobutton {
+        background-color: black;
+        /* Green */
+        border: none;
+        color: rgb(241, 126, 50);
+        padding: 5px 35px;
+        text-align: center;
+        text-decoration: none;
+      
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-left: -100px;
+    }
+    .formulariobutton:hover {
+        background-color: rgb(241, 126, 50);
+        border: none;
+        color: black;
+        padding: 5px 35px;
+      
+      
+        padding: 5px 35px;
+        text-align: center;
+        text-decoration: none;
+      
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-left: -100px;
+    }
+    .formulario textarea {
+        background-color: rgb(216, 250, 250);
+        resize: none;
+        width: 350px!important;
+        margin-left: -330px;
+    }
+    .imagen {
+       
+        width: 600px;
+        height: 200px;
+      margin-left:120px
+      
+      };
+       
+}
 
 @media (max-width: 720px) { 
 
