@@ -40,7 +40,63 @@
     line-height: 1.9;
     text-align: left;
 }
+@media (max-width: 720px) { 
 
+    .nosotroscard {
+        width: 100%;
+        height: 700px;
+        flex-direction: column;
+        display: flex;
+        margin-top: -30px;
+        background-color: rgb(244, 241, 236);
+    }
+    
+    .contenedornosotros {
+        background-color: rgb(236, 243, 244);
+        width: 100%
+    }
+    
+    .nosotroscontenido {
+        width: 500px;
+        height: 510px;
+        margin: 90px;
+
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+    .nosotroscontenido span {
+        font-weight: 600;
+        margin-right: 230px;
+        font-size: 40px;
+        color: rgb(22, 22, 22);
+    }
+    
+    .nosotrosp {
+        width: 120px;
+        height: 10px;
+        margin-top: 10px;
+        justify-content: center;
+        background-color: rgb(222, 111, 26);
+    }
+    
+    .nosotroscontenido>p {
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 1.5;
+        text-align: left;
+    }
+    
+    
+    .imagen {
+        margin-top: -260px;
+           width: 230px ;
+           height: 20px;
+           margin-left: 230px;
+          
+       }
+   
+}
 
 @media (max-width: 620px) { 
 
@@ -61,7 +117,7 @@
     .nosotroscontenido {
         width: 410px;
         height: 510px;
-        margin: 30px;
+        margin: 60px;
 
         margin-top: 50px;
         text-align: center;
@@ -83,7 +139,7 @@
     }
     
     .nosotroscontenido>p {
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 900;
         line-height: 1.3;
         text-align: left;
@@ -92,9 +148,9 @@
     
     .imagen {
         margin-top: -260px;
-           width: 220px !important;
+           width: 230px ;
            height: 20px;
-           margin-left: 100px;
+           margin-left: 130px;
           
        }
    
@@ -150,7 +206,7 @@
     
     .imagen {
         margin-top: -260px;
-           width: 220px !important;
+           width: 220px ;
            height: 20px;
            margin-left: 100px;
           
@@ -210,7 +266,7 @@
     
     .imagen {
         margin-top: -180px;
-           width: 150px !important;
+           width: 150px;
            height: 12px;
            margin-left: 110px;
           background-color: brown;
@@ -273,7 +329,7 @@
     
     .imagen {
         margin-top: -160px;
-           width: 140px !important;
+           width: 140px ;
            height: 11px;
            margin-left: 70px;
           

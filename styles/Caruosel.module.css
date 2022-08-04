@@ -44,7 +44,7 @@
     
     .carouselwrapper {
         width: 360px!important;
-        margin-left: 40px!important;
+        margin-left: 35px!important;
     }
     
     
@@ -154,19 +154,19 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: blue;
+     
     }
     
     
     .controlswrapper {
         width: 100%;
-        background-color: orange;
+     
     }
     
     .carouselwrapper {
         width: 100%;
           margin-left: 0px;
-          background-color: red;
+         
     }
     
     

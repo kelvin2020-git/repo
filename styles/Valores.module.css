@@ -328,7 +328,7 @@ margin-top: 100px;
 }
 
 
-@media (max-width: 700px) { 
+@media (max-width: 720px) { 
 
     .servicios {
         width: 100%;
@@ -349,7 +349,7 @@ margin-top: 100px;
     .serviciosp {
         width: 120px;
         height: 10px;
-        margin-left:220px;
+        margin-left:320px;
         justify-content: center;
         background-color: rgb(222, 111, 26);
         text-align: center;
@@ -359,11 +359,11 @@ margin-top: 100px;
     .grid {
         display: flex;
        flex-direction: column;
-        margin-left: 40px;
+        margin-left: 80px;
     }
     
     .grid>article {
-        width: 450px;
+        width: 550px;
         height: 230px;
         margin: 20px;
         box-shadow:  4px 4px 4px 4px  rgba(0, 0, 0, 0.3);
@@ -371,7 +371,7 @@ margin-top: 100px;
     
     
     .grid>aside {
-        width: 450px;
+        width: 550px;
         height: 400px;
         margin: 20px;
     margin-left: 20px;
@@ -386,10 +386,10 @@ margin-top: 100px;
        margin-top: -10px;
     }
     .text h3{
-    font-size: 18px;
+    font-size: 19px;
     }
     .text>p {
-        font-size: 11px;
+        font-size: 12px;
         line-height: 1.1;
         text-align: left;
         font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
@@ -403,7 +403,7 @@ margin-top: 100px;
     font-weight: 600;
     letter-spacing: 0.2em;
     margin-left: 100px;
-    margin-top: 70px;
+    margin-top: 60px;
     }
     
 }
@@ -411,7 +411,7 @@ margin-top: 100px;
 
 
 
-@media (max-width: 600px) { 
+@media (max-width: 620px) { 
 
     .servicios {
         width: 100%;
@@ -442,12 +442,12 @@ margin-top: 100px;
     .grid {
         display: flex;
        flex-direction: column;
-        margin-left: 10px;
+        margin-left: 50px;
     }
     
     .grid>article {
         width: 450px;
-        height: 230px;
+        height: 240px;
         margin: 20px;
         box-shadow:  4px 4px 4px 4px  rgba(0, 0, 0, 0.3);
     }
@@ -469,10 +469,10 @@ margin-top: 100px;
        margin-top: -10px;
     }
     .text h3{
-    font-size: 18px;
+    font-size: 19px;
     }
     .text>p {
-        font-size: 11px;
+        font-size: 12px;
         line-height: 1.1;
         text-align: left;
         font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
@@ -486,7 +486,7 @@ margin-top: 100px;
     font-weight: 600;
     letter-spacing: 0.2em;
     margin-left: 100px;
-    margin-top: 70px;
+    margin-top: 60px;
     }
     
 }
