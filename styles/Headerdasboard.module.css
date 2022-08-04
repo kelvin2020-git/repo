@@ -198,7 +198,133 @@
        }
         
     }
-    @media (max-width: 520px) { 
+    @media (max-width: 540px) { 
+    
+        .btnlogout {
+            border-color: #d3181e;
+            color: white;
+            border-radius: 4px;
+            padding: 2px;
+            font-size: 8px;
+            margin-bottom: 10px;
+            border: 2px solid #7a7e7a;
+            background-color: #ee2233;
+            margin-left: 80px;
+        }
+        .headertext {
+            margin-left: -10px;
+            font-size: 7px;
+            text-decoration: none;
+           margin-left:-100px;
+            color: white;
+            margin-top: 1px !important;
+            font-family:  Helvetica, sans-serif;
+            transition: all ease-out 300ms;
+        }
+   
+        .headertext h1 {
+            font-size: 8px;
+            margin-bottom: -20px;
+        }
+        .cabecera {
+            font-size: 0.45em;
+            left: 0px;
+            height: 50px;
+            width: 100%;
+            overflow: hidden;
+            background-color: rgba(100, 99, 99, 0.802);
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 900
+        }
+        .btnhome {
+            border-color: #3ba2f1;
+            color: white;
+            border-radius: 4px;
+            padding: 2px;
+               font-size: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #7a7e7a;
+            background-color: #2296ee;
+            margin-left: 10px;
+        }
+        .btnlogout:hover {
+            color: rgb(12, 11, 11);
+            background-color: #ee2233;
+        }
+        .btnhome:hover {
+           color: white;
+           background-color: #b3b3b3bb;
+       }
+        
+    }
+
+    @media (max-width: 620px) { 
+    
+        .btnlogout {
+            border-color: #d3181e;
+            color: white;
+            border-radius: 4px;
+            padding: 2px;
+            font-size: 8px;
+            margin-bottom: 10px;
+            border: 2px solid #7a7e7a;
+            background-color: #ee2233;
+            margin-left: 80px;
+        }
+        .headertext {
+            margin-left: -10px;
+            font-size: 7px;
+            text-decoration: none;
+           margin-left:-100px;
+            color: white;
+            margin-top: 1px !important;
+            font-family:  Helvetica, sans-serif;
+            transition: all ease-out 300ms;
+        }
+   
+        .headertext h1 {
+            font-size: 8px;
+            margin-bottom: -20px;
+        }
+        .cabecera {
+            font-size: 0.45em;
+            left: 0px;
+            height: 50px;
+            width: 100%;
+            overflow: hidden;
+            background-color: rgba(100, 99, 99, 0.802);
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 900
+        }
+        .btnhome {
+            border-color: #3ba2f1;
+            color: white;
+            border-radius: 4px;
+            padding: 2px;
+               font-size: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #7a7e7a;
+            background-color: #2296ee;
+            margin-left: 10px;
+        }
+        .btnlogout:hover {
+            color: rgb(12, 11, 11);
+            background-color: #ee2233;
+        }
+        .btnhome:hover {
+           color: white;
+           background-color: #b3b3b3bb;
+       }
+        
+    }
+
+    @media (max-width: 720px) { 
     
         .btnlogout {
             border-color: #d3181e;

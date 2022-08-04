@@ -41,7 +41,6 @@ const CategoryList = () => {
             <tr>
                 <th>Nombre</th>       
                 <th>Fecha Creación</th>
-                
                 <th>Acciones</th>
             </tr>
         </thead>
