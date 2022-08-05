@@ -9,6 +9,7 @@ import { getAnalytics, logEvent } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 
+
 const firebaseConfig = {
   apiKey: "AIzaSyBW4BkytN0_cFYzAk9a0ufSFMoAy4QiJpU",
   authDomain: "proyecto2-4854e.firebaseapp.com",
@@ -18,8 +19,6 @@ const firebaseConfig = {
   appId: "1:724845553486:web:a8518c1626be89fc6d201f",
   measurementId: "G-VYBXPQJ48J"
 };
-
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();

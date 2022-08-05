@@ -50,7 +50,7 @@ export default function (req, res) {
   
     const mailData = {
         from:req.body.email,
-        to: 'kelvincastillo429@gmail.com',
+        to: 'strongconcrete.info@gmail.com',
         subject: `Mensaje Desde Strong Concrete:  ${req.body.name}` + ` ${req.body.apellido}`,
         text: req.body.message + " | Numero telefono: " + req.body.telefono + " | Enviado De: " + req.body.email,
         html: `<div>${req.body.message}</div><p>Numero telefono: ${req.body.telefono}</p><p>Enviado desde el correo: ${req.body.email}</p>`

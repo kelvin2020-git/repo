@@ -46,7 +46,7 @@ const Proyect = ({proyecto}) => {
     return (
         <>
             <td>{proyecto.nombre}</td>
-         
+            <td className="contenido">{proyecto.descripcion}</td>
             <td>{proyecto.categoria}</td>
             <td>{moment(proyecto.fecha).format('MMMM Do YYYY, h:mm:ss a')} </td>
           

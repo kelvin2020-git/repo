@@ -1,14 +1,14 @@
 html,
 body {
- width: 100%;
- height: 100%;
-  background-repeat: no-repeat;
-  background: url(../public/fondo.webp) no-repeat center center fixed;
-  background-size: 100% 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
-  margin: 0;
-}
+  width: 100%;
+  height: 100%;
+   background-repeat: no-repeat;
+   background: url(../public/fondo.webp) no-repeat center center fixed;
+   background-size: 100% 100%;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 0;
+   margin: 0;
+ }
 
 a {
   color: inherit;
@@ -18,7 +18,6 @@ a {
 * {
   box-sizing: border-box;
 }
-
 
 
 /*estilos y clases por defecto del carousel*/
@@ -47,6 +46,25 @@ a {
 }
 
 /* estilos para los botones de carousel */
+
+
+
+.rec.rec-arrow:hover:not(:disabled) {
+  transform: scale(1.2);
+}
+/* estilos para los botones de carousel */
+
+.rec.rec-arrow:hover {
+ 
+  background-color:transparent!important;
+}
+
+/* hide disabled buttons  */
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+  border-color: transparent!important;
+}
+
 .rec.rec-arrow {
   position: relative;
   width: 300px !important;
@@ -96,18 +114,30 @@ a {
   color: rgb(255, 254, 254);
   text-align: center;
 }
-@media (max-width: 410px) { 
+.rec-carousel-item:focus {
+  outline: none;
+  box-shadow: inset 0 0 1px 1px lightgrey;
+}
 
+
+@media (max-width: 990px) { 
+  .rec.rec-pagination:hover {
+    color: white !important;
+  }
   .rec.rec-arrow {
     position: relative;
     width: 50px !important;
     height: 50px !important;
-    border-radius: 0%;
-    border-color: #a8a3a3!important;
-    background: #eee;
-    box-sizing: border-box;
-    border: 0px tomato;
-    background-color: transparent!important;
+    border-radius: 50%;
+
+    color: rgb(220, 220, 220) !important;
+    background-color: rgba(0, 0, 0, 0.37) !important;
+  }
+
+  
+ 
+  .rec.rec-arrow:hover:not(:disabled) {
+    transform: scale(1.2)!important;
   }
   .rec-arrow-right {
     left: -10px;
@@ -115,12 +145,15 @@ a {
     height: 10px !important;
     z-index: 2;
   }
-  .rec.rec-pagination:hover {
-    color: white !important;
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+    border-color: transparent!important;
   }
-  
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+}
   .rec-arrow-left {
-    left: 110px;
+    left: 150px;
     z-index: 2;
   }
   
@@ -128,16 +161,37 @@ a {
     margin-left: -110px;
     z-index: 1;
   }
-  
+  .rec.rec-slider-container {
+    margin-left: 60px;
+   
+  }
   .rec.rec-arrow-right {
     margin-left: -110px;
     z-index: 2;
   }
-
-  
-  
+  .rec.rec-arrow:hover {
+    background-color:transparent!important;
+  }
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 520px) { 
   .rec.rec-pagination:hover {
     color: white !important;
@@ -146,12 +200,16 @@ a {
     position: relative;
     width: 50px !important;
     height: 50px !important;
-    border-radius: 0%;
-    border-color: #a8a3a3!important;
-    background: #eee;
-    box-sizing: border-box;
-    border: 0px tomato;
-    background-color: transparent!important;
+    border-radius: 50%;
+
+    color: rgb(220, 220, 220) !important;
+    background-color: rgba(0, 0, 0, 0.37) !important;
+  }
+
+  
+ 
+  .rec.rec-arrow:hover:not(:disabled) {
+    transform: scale(1.2)!important;
   }
   .rec-arrow-right {
     left: -10px;
@@ -159,10 +217,15 @@ a {
     height: 10px !important;
     z-index: 2;
   }
-  
-  
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+    border-color: transparent!important;
+  }
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+}
   .rec-arrow-left {
-    left: 110px;
+    left: 150px;
     z-index: 2;
   }
   
@@ -170,26 +233,87 @@ a {
     margin-left: -110px;
     z-index: 1;
   }
-  
+  .rec.rec-slider-container {
+    margin-left: 60px;
+   
+  }
   .rec.rec-arrow-right {
     margin-left: -110px;
     z-index: 2;
   }
+  .rec.rec-arrow:hover {
+    background-color:transparent!important;
+  }
   
 }
+
+
+@media (max-width: 410px) { 
+  .rec-carousel-item:focus {
+    outline: none;
+    box-shadow: inset 0 0 1px 1px lightgrey;
+}
+  .rec.rec-arrow {
+    position: relative;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+
+    color: rgb(220, 220, 220) !important;
+    background-color: rgba(0, 0, 0, 0.37) !important;
+  }
+  .rec-arrow-right {
+    left: -10px;
+    width: 0px !important;
+    height: 0px !important;
+   
+    z-index: 2;
+  }
+  .rec.rec-pagination:hover {
+    color: white !important;
+  }
+  
+  .rec-arrow-left {
+    left: 110px;
+    z-index: 2;
+
+  }
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+  .rec.rec-arrow-left {
+    margin-left: -110px;
+    z-index: 1;
+    margin-top: -40px;
+  }
+  .rec.rec-slider-container {
+    margin-left: 60px;
+   
+  }
+  .rec.rec-arrow-right {
+    margin-top: -40px;
+    z-index: 2;
+
+  }
+  .rec.rec-pagination {
+    color: white !important;
+  }
+  
+} 
 @media (max-width: 360px) { 
 
   .rec.rec-arrow {
     position: relative;
     width: 50px !important;
     height: 50px !important;
-    border-radius: 0%;
-    border-color: #a8a3a3!important;
-    background: #eee;
-    box-sizing: border-box;
-    border: 0px tomato;
-    background-color: transparent!important;
+    border-radius: 50%;
+
+    color: rgb(220, 220, 220) !important;
+    background-color: rgba(0, 0, 0, 0.37) !important;
   }
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+}
   
   .rec-arrow-right {
     left: -10px;
@@ -213,10 +337,10 @@ a {
     margin-left: -50px;
     z-index: 2;
   }
-  
-}
-  
-  
+  .rec.rec-pagination {
+    color: white !important;
+  }
+} 
   
 
 
@@ -335,6 +459,9 @@ clase para centrar todas las tabla
   background-color: white;
  
 }
+
+
+
 /*
 
 
@@ -482,7 +609,41 @@ font-weight: 800;
     margin-top: -80px!important;
     margin-left: -210px!important;
   }
+  .contenedorusuario {
+    position: relative;
+    width: 100%;
+    float: right;
+    height: 100vh;
+    bottom: 0;
+  }
   
+  
+  .contenedorusuario .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: white;
+  }
+  
+  
+  
+  
+  .contenedorusuario .container a {
+    position: relative;
+  
+  
+  }
+  
+  .contenedorusuario .container p {
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    color: #FFF;
+    font-weight: bold;
+    margin-top: 20px;
+  }
   
   .capa2{
     position: fixed;
@@ -632,11 +793,11 @@ margin-top: 0px!important;
     font-size: 12px!important;
   font-weight: 800;
   padding: 4px;
-  margin-left: 40px!important;
+  margin-left: 50px!important;
   margin-top: 0px!important;
   }
 .card-footer{
-  margin-left: 30px!important;
+  margin-left: 40px!important;
   font-size: 10px!important;
   font-weight: 500;
   margin-top: 2px!important;
@@ -646,20 +807,20 @@ margin-top: 0px!important;
   background-color: #0397d6;
 }
 .card-text{
-  margin-left: 10px!important;
+  margin-left: 30px!important;
   font-size: 10px!important;
   font-weight: 500;
 }
   .textpanel {
-    font-size: 15px!important;
+    font-size: 16px!important;
     font-weight: 800;
     margin-top: 30px;
   }
   .titulopanel {
-    font-size: 15px!important;
+    font-size: 16px!important;
     font-weight: 600;
     padding: 50px;
-    margin-left: -30px!important;
+    margin-left: -10px!important;
     margin-top: -80px;
   }
   .cardexistencia {
@@ -771,34 +932,35 @@ margin-top: 0px!important;
 }
 @media (min-width: 680px) { 
   .card-numero {
-    font-size: 12px!important;
+    font-size: 13px!important;
   font-weight: 800;
   padding: 4px;
-  margin-left: 40px!important;
+  margin-left: 60px!important;
   margin-top: 0px!important;
   }
 .card-footer{
-  margin-left: 30px!important;
-  font-size: 10px!important;
+  margin-left: 50px!important;
+  font-size: 12px!important;
   font-weight: 500;
   margin-top: 2px!important;
   border-color:transparent;
+  cursor: pointer;
 }
 .text-white{
   background-color: #0397d6;
 }
 .card-text{
-  margin-left: 10px!important;
+  margin-left: 40px!important;
   font-size: 10px!important;
   font-weight: 500;
 }
   .textpanel {
-    font-size: 15px!important;
+    font-size: 18px!important;
     font-weight: 800;
     margin-top: 30px;
   }
   .titulopanel {
-    font-size: 15px!important;
+    font-size: 18px!important;
     font-weight: 600;
     padding: 50px;
     margin-left: -30px!important;
@@ -916,37 +1078,37 @@ margin-top: 0px!important;
 
 @media (min-width: 880px) { 
   .card-numero {
-    font-size: 12px!important;
+    font-size: 15px!important;
   font-weight: 800;
   padding: 4px;
-  margin-left: 40px!important;
-  margin-top: 0px!important;
+  margin-left: 70px!important;
+  margin-top: 10px!important;
   }
 .card-footer{
-  margin-left: 30px!important;
-  font-size: 10px!important;
+  margin-left: 60px!important;
+  font-size: 12px!important;
   font-weight: 500;
-  margin-top: 2px!important;
+  margin-top: 20px!important;
   border-color:transparent;
 }
 .text-white{
   background-color: #0397d6;
 }
 .card-text{
-  margin-left: 10px!important;
-  font-size: 10px!important;
+  margin-left: 50px!important;
+  font-size: 12px!important;
   font-weight: 500;
 }
   .textpanel {
-    font-size: 18px!important;
+    font-size: 19px!important;
     font-weight: 800;
     margin-top: 30px;
   }
   .titulopanel {
-    font-size: 18px!important;
+    font-size: 19px!important;
     font-weight: 600;
     padding: 50px;
-    margin-left: -30px!important;
+    margin-left: 0px!important;
     margin-top: -80px;
   }
   .cardexistencia {
@@ -1175,12 +1337,12 @@ margin-top: 0px!important;
 }
 
 .textpanel {
-  font-size: 16px!important;
+  font-size: 18px!important;
   font-weight: 800;
   margin-top: 30px;
 }
 .titulopanel {
-  font-size: 18px!important;
+  font-size: 20px!important;
   font-weight: 600;
   padding: 50px;
   margin-left: -20px!important;
@@ -1194,7 +1356,7 @@ margin-left: 60px!important;
 margin-top: 0px!important;
 }
 .card-footer{
-margin-left: 60px!important;
+margin-left: 45px!important;
 font-size: 11px!important;
 font-weight: 500;
 margin-top: 2px!important;
@@ -1204,7 +1366,7 @@ border-color:transparent;
 background-color: #0397d6;
 }
 .card-text{
-margin-left: 20px!important;
+margin-left: 30px!important;
 font-size: 11px!important;
 font-weight: 500;
 } 
@@ -1444,18 +1606,55 @@ clase para paginaciones de las tablas
   color: #d23200;
   font-size: 14px;
 }
-@media (max-width: 410px) { 
+
+@media (max-width: 989px) { 
 
   .mensajError {
     color: #d23200;
     font-size: 14px;
-    margin-left: 180px;
+    margin-left: -320px;
   }
 
-  
-  
-  
 }
+@media (max-width: 920px) { 
+
+  .mensajError {
+    color: #d23200;
+    font-size: 14px;
+    margin-left: -240px;
+  }
+
+}
+@media (max-width: 820px) { 
+
+  .mensajError {
+    color: #d23200;
+    font-size: 14px;
+    margin-left: -240px;
+  }
+
+}
+
+@media (max-width: 720px) { 
+
+  .mensajError {
+    color: #d23200;
+    font-size: 14px;
+    margin-left: -240px;
+  }
+
+}
+
+@media (max-width: 620px) { 
+
+  .mensajError {
+    color: #d23200;
+    font-size: 14px;
+    margin-left: -200px;
+  }
+
+}
+
 @media (max-width: 520px) { 
 
   .mensajError {
@@ -1464,6 +1663,14 @@ clase para paginaciones de las tablas
     margin-left: 80px;
   }
 }
+@media (max-width: 410px) { 
+
+  .mensajError {
+    color: #d23200;
+    font-size: 14px;
+    margin-left: 180px;
+  } 
+}
 @media (max-width: 360px) { 
 
   .mensajError {
@@ -1471,12 +1678,11 @@ clase para paginaciones de las tablas
     font-size: 14px;
     margin-left: 80px;
   }
-  
 
-  
-  
-  
 }
+
+
+
 
 
 
@@ -1621,7 +1827,138 @@ clase para paginaciones de las tablas
 
 
 
+  @media (min-width: 400px) { 
 
+    .contenedorusuario {
+      background-color: white;
+    
+      position: relative;
+     
+      float: center;
+      height: 100vh;
+      margin-left: 0px;
+    }
+    
+    
+    .contenedorusuario .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      background-color: white;
+    }
+    
+    
+    
+    
+    .contenedorusuario .container a {
+      position: relative;
+    
+    
+    }
+    
+    .contenedorusuario .container p {
+      text-transform: uppercase;
+      font-size: 1em;
+      letter-spacing: 0.1em;
+      color: rgb(221, 42, 42);;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    
+    
+    
+    
+    
+    
+    .header{
+      background-color: rgba(100, 99, 99, 0.802);
+      width: 100%;
+      height: 100px;
+      z-index: 1;
+      position: fixed;
+      top: 0;left: 0;
+    }
+    .container{
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    
+    }
+    .container .btn-menu, .logo{
+      float: left;
+      line-height:100px;
+    }
+    .container .btn-menu label{
+      color: #fff;
+      font-size: 25px;
+      cursor: pointer;
+    }
+    .logo h1{
+      color: #fff;
+      font-weight: 400;
+      font-size: 22px;
+      margin-left: 20px;
+    margin-top: 0px!important;
+    }
+    
+    
+    .container .btn-menu label{
+      color: #fff;
+      font-size: 25px;
+      cursor: pointer;
+    }
+    
+    .container .menu{
+      float: right;
+      line-height: 100px;
+    }
+    .container .menu a{
+      display: inline-block;
+      padding: 15px;
+      line-height: normal;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      transition: all 0.3s ease;
+      border-bottom: 2px solid transparent;
+      font-size: 15px;
+      margin-top: 140px;
+      margin-right: 5px;
+    }
+    
+    
+    
+    .logo2 h1{
+      color: #fff;
+      font-weight: 400;
+      font-size: 22px;
+      margin-left: 20px;
+    margin-top: 40px!important;
+    }
+    .container .btn-menu, .logo2{
+      float: left;
+      line-height:100px;
+    }
+    
+    .container .menu2{
+      float: right;
+      line-height: 100px;
+    }
+    .container .menu2 a{
+      display: inline-block;
+      padding: 15px;
+      line-height: normal;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.3s ease;
+      border-bottom: 2px solid transparent;
+      font-size: 16px;
+      margin-top: 100px;
+      margin-right: 5px;
+    }
+    
+    }
 
 
 
@@ -1774,7 +2111,7 @@ margin-top: 40px!important;
       visibility: hidden;
     
     }
-    
+   
     #btn-menu:checked ~ .container-menu{
       opacity: 1;
       visibility: visible;
@@ -2254,3 +2591,29 @@ Font-size:12px;
   margin-left: 50px!important;
   margin-top: 20px!important;
 }
+/* clases para truncar el contenido de las tablas y agregarle punto suspensivos al final*/
+
+
+
+
+
+  @media (max-width: 1000px) { 
+  
+    .contenido  {
+  
+      color: #000000;
+    
+    margin-top:-20px;
+  
+      width: 200px;
+    
+      display: block;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline-block;
+    }
+    }

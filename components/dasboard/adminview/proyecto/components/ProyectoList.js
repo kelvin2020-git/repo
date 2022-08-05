@@ -44,7 +44,7 @@ const ProyectoList = () => {
         <thead>
             <tr>
                 <th>Nombre</th>
-               
+                <th>Descripción</th>
                 <th>Categoría</th>
                 <th>Fecha Creación</th>
           

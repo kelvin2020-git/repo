@@ -74,7 +74,7 @@ const Employee = ({usuario}) => {
                 backdrop="static">
         <Modal.Header closeButton>
             <Modal.Title>
-                Editar Roles
+                Editar Usuario
             </Modal.Title>
         </Modal.Header>
         <Modal.Body>

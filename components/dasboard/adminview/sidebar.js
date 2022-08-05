@@ -78,7 +78,7 @@ const Sidebar = () => {
 		<li className="sidetext"><a onClick={usuario}>Usuario</a></li>
         <li className="sidetext"><a onClick={proyecto}>proyecto</a></li>
 		<li className="sidetext">	<a onClick={categoria}>Categoria</a></li>
-        <li className="sidetext"><a onClick={dashboard}>panel</a></li>
+        <li className="sidetext"><a onClick={dashboard}>Panel Admin</a></li>
             </ul>
 		</nav>
 		<label htmlFor="btn-menu">✖️</label>

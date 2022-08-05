@@ -449,12 +449,12 @@
     .logincontainer {
         height: 35.75em;
         width: 400px;
-       margin-left: 40px;
+    
         border-radius: 10px;
         display: flex;
         justify-content: space-between;
         overflow: hidden;
-        margin-left: 520px!important;
+        margin-left: 490px!important;
     }
     
     .logininfocontainer {
