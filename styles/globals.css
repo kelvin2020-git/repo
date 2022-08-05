@@ -49,9 +49,7 @@ a {
 
 
 
-.rec.rec-arrow:hover:not(:disabled) {
-  transform: scale(1.2);
-}
+
 /* estilos para los botones de carousel */
 
 .rec.rec-arrow:hover {
@@ -70,7 +68,7 @@ a {
   width: 300px !important;
   height: 400px !important;
   border-radius: 0%;
-  border-color: #a8a3a3!important;
+
   background: #eee;
   box-sizing: border-box;
   border: 0px tomato;
