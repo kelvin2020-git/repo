@@ -255,9 +255,9 @@ a {
 }
   .rec.rec-arrow {
     position: relative;
-    width: 50px !important;
-    height: 50px !important;
-    border-radius: 50%;
+    width: 24px !important;
+    height: 40px !important;
+    border-radius: 10%;
 
     color: rgb(220, 220, 220) !important;
     background-color: rgba(0, 0, 0, 0.37) !important;
@@ -266,7 +266,7 @@ a {
     left: -10px;
     width: 0px !important;
     height: 0px !important;
-   
+    top:20px;
     z-index: 2;
   }
   .rec.rec-pagination:hover {
@@ -274,7 +274,8 @@ a {
   }
   
   .rec-arrow-left {
-    left: 110px;
+    left: 160px;
+    top:20px;
     z-index: 2;
 
   }
@@ -529,7 +530,7 @@ font-weight: 800;
   margin-top: -80px;
 }
 
-
+/*medias queries para card de panel administrativo, contenedor de las tablas y para el header de panel */
 @media (min-width: 360px) { 
   .card-numero {
     font-size: 12px!important;
@@ -787,7 +788,7 @@ margin-top: 0px!important;
 
 }
 }
-
+/*medias queries para card de panel administrativo, contenedor de las tablas y para el header de panel */
 @media (min-width: 520px) { 
   .card-numero {
     font-size: 12px!important;
@@ -930,6 +931,8 @@ margin-top: 0px!important;
 
 }
 }
+
+/*medias queries para card de panel administrativo, contenedor de las tablas y para el header de panel */
 @media (min-width: 680px) { 
   .card-numero {
     font-size: 13px!important;
@@ -1074,7 +1077,7 @@ margin-top: 0px!important;
 }
 }
 
-
+/*medias queries para card de panel administrativo, contenedor de las tablas y para el header de panel */
 
 @media (min-width: 880px) { 
   .card-numero {
@@ -1218,6 +1221,7 @@ margin-top: 0px!important;
 
 }
 }
+/*medias queries para card de panel administrativo, contenedor de las tablas y para el header de panel */
 
 @media (min-width: 980px) { 
   .cardexistencia {
@@ -1966,7 +1970,54 @@ clase para paginaciones de las tablas
 
 
 
+    @media (min-width: 340px) { 
 
+      .contenedorusuario {
+        background-color: white;
+      
+        position: relative;
+       
+        float: center;
+        height: 100vh;
+        margin-left: 0px;
+      }
+      
+      
+      .contenedorusuario .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-color: white;
+      }
+      
+      
+      
+      
+      .contenedorusuario .container a {
+        position: relative;
+      
+      
+      }
+      
+      .contenedorusuario .container p {
+        text-transform: uppercase;
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        color: rgb(221, 42, 42);;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+      }
 
 
 
