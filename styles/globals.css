@@ -46,29 +46,12 @@ a {
 }
 
 /* estilos para los botones de carousel */
-
-
-
-
-/* estilos para los botones de carousel */
-
-.rec.rec-arrow:hover {
- 
-  background-color:transparent!important;
-}
-
-/* hide disabled buttons  */
-.rec.rec-arrow:disabled {
-  visibility: hidden;
-  border-color: transparent!important;
-}
-
 .rec.rec-arrow {
   position: relative;
   width: 300px !important;
   height: 400px !important;
   border-radius: 0%;
-
+  border-color: #a8a3a3!important;
   background: #eee;
   box-sizing: border-box;
   border: 0px tomato;
@@ -111,10 +94,6 @@ a {
   font-size: 24px;
   color: rgb(255, 254, 254);
   text-align: center;
-}
-.rec-carousel-item:focus {
-  outline: none;
-  box-shadow: inset 0 0 1px 1px lightgrey;
 }
 
 
